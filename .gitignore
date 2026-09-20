@@ -195,3 +195,14 @@ datasets/gaia/utils/*.jsonl
 /figures/*.png
 
 .pypirc
+
+# Local SWE-bench data, workspaces, trajectories and generated harness reports.
+# Curated experiment reports are published under docs/experiments/ instead.
+/outputs/
+/datasets/swebench/
+/repos/
+/test_repos/
+/*.eval_*.json
+/*.eval_repair_*.json
+/*.mini_fixed_*.json
+/*.native_*.json

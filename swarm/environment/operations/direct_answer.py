@@ -68,6 +68,7 @@ class DirectAnswer(Node):
                 "operation": self.node_name,
                 "task": task,
                 "files": input.get("files", []),
+                "container": input.get("container"),
                 "input": task,
                 "role": role,
                 "constraint": constraint,

@@ -135,7 +135,7 @@ class FinalDecision(Node):
 
         executions = {"operation": self.node_name,
                         "task": inputs[0]["task"], 
-                        "files": inputs[0]["files"],
+                        "files": inputs[0].get("files", []),
                         "input": inputs, 
                         "subtask": prompt,
                         "output": response,

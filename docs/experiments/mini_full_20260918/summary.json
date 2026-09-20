@@ -1,0 +1,656 @@
+{
+  "batch_id": "mini_full_20260918_domains_v4b",
+  "generated_at": "2026-09-20T01:36:23.109875+00:00",
+  "started": "2026-09-18T12:16:59.144188+00:00",
+  "finished": "2026-09-19T10:29:01.818834+00:00",
+  "config": {
+    "model": "DeepSeek-V4-Flash-0731",
+    "temperature": 0.2,
+    "task_seconds": 1200,
+    "api_timeout": 300,
+    "command_timeout": 120,
+    "report_seconds": 60,
+    "budget_mode": "shared_task",
+    "phases": {
+      "analysis": {
+        "seconds": 240,
+        "steps": 30,
+        "max_tokens": 16384
+      },
+      "implementation": {
+        "seconds": 420,
+        "steps": 80,
+        "max_tokens": 16384
+      },
+      "review": {
+        "seconds": 240,
+        "steps": 35,
+        "max_tokens": 16384
+      },
+      "revision": {
+        "seconds": 180,
+        "steps": 40,
+        "max_tokens": 16384
+      },
+      "final_review": {
+        "seconds": 120,
+        "steps": 20,
+        "max_tokens": 16384
+      }
+    }
+  },
+  "overall": {
+    "prompt_tokens": 200212805,
+    "completion_tokens": 6589142,
+    "total_tokens": 206801947,
+    "reasoning_tokens": 3085673,
+    "cached_tokens": 168371968,
+    "model_requests": 15134,
+    "model_responses": 12193,
+    "api_errors": 2929,
+    "inflight_requests": 12,
+    "actions": 16278,
+    "checkpoints": 1344,
+    "reasoning_responses": 11502,
+    "usage_missing": 0,
+    "reasoning_usage_present": 12193,
+    "cached_usage_present": 12193,
+    "length_responses": 0,
+    "api_success_seconds": 114514.44561366225,
+    "api_error_seconds": 9113.555067670997,
+    "error_to_retry_gap_seconds": 14198.679708168842,
+    "outcomes": {
+      "unresolved": 49,
+      "resolved": 102,
+      "empty_patch": 3
+    },
+    "batch_wall_seconds": 79922.674646,
+    "task_seconds": {
+      "n": 154,
+      "total": 211069.300111,
+      "mean": 1370.5798708506493,
+      "median": 1362.1576275,
+      "p90": 1495.0442166999999,
+      "p95": 1524.5339450499998,
+      "min": 1030.147336,
+      "max": 1634.431368
+    },
+    "generation_trace_seconds": {
+      "n": 154,
+      "total": 183343.49175271764,
+      "mean": 1190.5421542384263,
+      "median": 1206.437442695722,
+      "p90": 1210.4206431629136,
+      "p95": 1211.2644357685465,
+      "min": 849.3074245089665,
+      "max": 1238.646422835067
+    },
+    "residual_seconds": {
+      "n": 154,
+      "total": 27725.808358282356,
+      "mean": 180.0377166122231,
+      "median": 160.02887581484754,
+      "p90": 287.7194418925499,
+      "p95": 317.12655339972974,
+      "min": 71.65469211574873,
+      "max": 424.86684582721
+    },
+    "task_tokens": {
+      "n": 154,
+      "total": 206801947,
+      "mean": 1342869.7857142857,
+      "median": 1315180.5,
+      "p90": 1829445.9000000001,
+      "p95": 1958629.15,
+      "min": 150732,
+      "max": 2895292
+    },
+    "average_active_tasks": 2.640918876224867,
+    "all_roles_completed": 25,
+    "tasks_with_api_errors": 150,
+    "tasks_with_rate_limits": 124,
+    "phase_exit_counts": {
+      "Submitted": 498,
+      "PhaseTimeout": 104,
+      "BudgetExhausted": 137,
+      "ReadOnlyViolation": 8,
+      "LimitsExceeded": 10,
+      "PhaseError": 10,
+      "TaskBudgetExhausted": 1,
+      "SkippedApproved": 2
+    },
+    "generation_status_counts": {
+      "completed_with_role_failures": 129,
+      "completed": 25
+    },
+    "patch_applied": 151,
+    "detailed_eval_reports": 151,
+    "implementation_patch_comparable": 151,
+    "implementation_patch_unchanged": 143,
+    "role_completion_outcomes": {
+      "complete": {
+        "resolved": 21,
+        "unresolved": 4
+      },
+      "incomplete": {
+        "unresolved": 45,
+        "resolved": 81,
+        "empty_patch": 3
+      }
+    }
+  },
+  "domains": {
+    "django/django": {
+      "n": 59,
+      "outcomes": {
+        "unresolved": 17,
+        "resolved": 42
+      },
+      "elapsed": {
+        "n": 59,
+        "total": 79922.445303,
+        "mean": 1354.617717,
+        "median": 1344.14969,
+        "p90": 1409.0770095999999,
+        "p95": 1486.8635095999998,
+        "min": 1154.119654,
+        "max": 1538.323958
+      },
+      "domain_span_seconds": 79922.66218,
+      "tokens": {
+        "n": 59,
+        "total": 85888467,
+        "mean": 1455736.7288135593,
+        "median": 1424620.0,
+        "p90": 1853205.4,
+        "p95": 1948856.7999999996,
+        "min": 659730,
+        "max": 2209201
+      },
+      "prompt_tokens": 83139313,
+      "completion_tokens": 2749154,
+      "total_tokens": 85888467,
+      "reasoning_tokens": 1340610,
+      "cached_tokens": 70199040,
+      "model_requests": 5747,
+      "model_responses": 4891,
+      "api_errors": 852,
+      "inflight_requests": 4,
+      "actions": 6653,
+      "checkpoints": 526,
+      "reasoning_responses": 4619,
+      "usage_missing": 0,
+      "reasoning_usage_present": 4891,
+      "cached_usage_present": 4891,
+      "length_responses": 0,
+      "api_success_seconds": 47039.87240325706,
+      "api_error_seconds": 3162.2675277008675,
+      "error_to_retry_gap_seconds": 4184.648737969343
+    },
+    "matplotlib/matplotlib": {
+      "n": 23,
+      "outcomes": {
+        "unresolved": 7,
+        "resolved": 16
+      },
+      "elapsed": {
+        "n": 23,
+        "total": 32540.917475000002,
+        "mean": 1414.8224989130435,
+        "median": 1402.340244,
+        "p90": 1519.4943323999998,
+        "p95": 1531.1800587,
+        "min": 1030.147336,
+        "max": 1536.189046
+      },
+      "domain_span_seconds": 32540.965792,
+      "tokens": {
+        "n": 23,
+        "total": 24076627,
+        "mean": 1046809.8695652174,
+        "median": 1036560.0,
+        "p90": 1261313.6,
+        "p95": 1469119.2999999998,
+        "min": 501632,
+        "max": 1685587
+      },
+      "prompt_tokens": 23200458,
+      "completion_tokens": 876169,
+      "total_tokens": 24076627,
+      "reasoning_tokens": 371711,
+      "cached_tokens": 19037952,
+      "model_requests": 2177,
+      "model_responses": 1646,
+      "api_errors": 528,
+      "inflight_requests": 3,
+      "actions": 2159,
+      "checkpoints": 190,
+      "reasoning_responses": 1550,
+      "usage_missing": 0,
+      "reasoning_usage_present": 1646,
+      "cached_usage_present": 1646,
+      "length_responses": 0,
+      "api_success_seconds": 15636.591875440441,
+      "api_error_seconds": 1444.4055060832761,
+      "error_to_retry_gap_seconds": 2640.4311399012804
+    },
+    "sphinx-doc/sphinx": {
+      "n": 33,
+      "outcomes": {
+        "resolved": 18,
+        "unresolved": 13,
+        "empty_patch": 2
+      },
+      "elapsed": {
+        "n": 33,
+        "total": 45132.564976,
+        "mean": 1367.6534841212122,
+        "median": 1374.169102,
+        "p90": 1472.2558864000002,
+        "p95": 1499.0891892,
+        "min": 1064.14615,
+        "max": 1542.314784
+      },
+      "domain_span_seconds": 45132.672639,
+      "tokens": {
+        "n": 33,
+        "total": 46836718,
+        "mean": 1419294.4848484849,
+        "median": 1371402.0,
+        "p90": 1880869.4,
+        "p95": 2101032.7999999993,
+        "min": 150732,
+        "max": 2895292
+      },
+      "prompt_tokens": 45560556,
+      "completion_tokens": 1276162,
+      "total_tokens": 46836718,
+      "reasoning_tokens": 571572,
+      "cached_tokens": 38627840,
+      "model_requests": 3374,
+      "model_responses": 2579,
+      "api_errors": 792,
+      "inflight_requests": 3,
+      "actions": 3493,
+      "checkpoints": 275,
+      "reasoning_responses": 2420,
+      "usage_missing": 0,
+      "reasoning_usage_present": 2579,
+      "cached_usage_present": 2579,
+      "length_responses": 0,
+      "api_success_seconds": 23627.828333592508,
+      "api_error_seconds": 2210.025942549575,
+      "error_to_retry_gap_seconds": 3749.0361996656284
+    },
+    "sympy/sympy": {
+      "n": 39,
+      "outcomes": {
+        "unresolved": 12,
+        "empty_patch": 1,
+        "resolved": 26
+      },
+      "elapsed": {
+        "n": 39,
+        "total": 53473.372357,
+        "mean": 1371.1121117179487,
+        "median": 1354.14819,
+        "p90": 1523.3636288,
+        "p95": 1548.4106633000001,
+        "min": 1108.155838,
+        "max": 1634.431368
+      },
+      "domain_span_seconds": 53473.477581,
+      "tokens": {
+        "n": 39,
+        "total": 50000135,
+        "mean": 1282054.7435897435,
+        "median": 1247846.0,
+        "p90": 1687776.2000000004,
+        "p95": 1960980.0,
+        "min": 576751,
+        "max": 2380538
+      },
+      "prompt_tokens": 48312478,
+      "completion_tokens": 1687657,
+      "total_tokens": 50000135,
+      "reasoning_tokens": 801780,
+      "cached_tokens": 40507136,
+      "model_requests": 3836,
+      "model_responses": 3077,
+      "api_errors": 757,
+      "inflight_requests": 2,
+      "actions": 3973,
+      "checkpoints": 353,
+      "reasoning_responses": 2913,
+      "usage_missing": 0,
+      "reasoning_usage_present": 3077,
+      "cached_usage_present": 3077,
+      "length_responses": 0,
+      "api_success_seconds": 28210.153001372237,
+      "api_error_seconds": 2296.8560913372785,
+      "error_to_retry_gap_seconds": 3624.5636306325905
+    }
+  },
+  "phases": {
+    "analysis": {
+      "exits": {
+        "Submitted": 140,
+        "LimitsExceeded": 8,
+        "ReadOnlyViolation": 5,
+        "PhaseTimeout": 1
+      },
+      "verdicts": {
+        "None": 154
+      },
+      "started": 154,
+      "elapsed": {
+        "n": 154,
+        "total": 45987.11986317858,
+        "mean": 298.61766144921154,
+        "median": 271.90853467863053,
+        "p90": 410.0482722213494,
+        "p95": 443.789642557362,
+        "min": 162.5278778579086,
+        "max": 1211.6598742641509
+      },
+      "prompt_tokens": 40601739,
+      "completion_tokens": 1378843,
+      "total_tokens": 41980582,
+      "reasoning_tokens": 580126,
+      "cached_tokens": 33366784,
+      "model_requests": 4372,
+      "model_responses": 3413,
+      "api_errors": 959,
+      "inflight_requests": 0,
+      "actions": 4748,
+      "checkpoints": 331,
+      "reasoning_responses": 3171,
+      "usage_missing": 0,
+      "reasoning_usage_present": 3413,
+      "cached_usage_present": 3413,
+      "length_responses": 0,
+      "api_success_seconds": 27687.62096539326,
+      "api_error_seconds": 2975.5306718093343,
+      "error_to_retry_gap_seconds": 4872.796656480525
+    },
+    "implementation": {
+      "exits": {
+        "Submitted": 148,
+        "PhaseTimeout": 5,
+        "BudgetExhausted": 1
+      },
+      "verdicts": {
+        "None": 153,
+        "unverified": 1
+      },
+      "started": 153,
+      "elapsed": {
+        "n": 153,
+        "total": 69616.05419948371,
+        "mean": 455.006890192704,
+        "median": 442.5020779748447,
+        "p90": 682.6624241581187,
+        "p95": 761.4089507268742,
+        "min": 90.25422532390803,
+        "max": 932.2945087100379
+      },
+      "prompt_tokens": 94861149,
+      "completion_tokens": 2574363,
+      "total_tokens": 97435512,
+      "reasoning_tokens": 1402389,
+      "cached_tokens": 83815168,
+      "model_requests": 5734,
+      "model_responses": 4562,
+      "api_errors": 1171,
+      "inflight_requests": 1,
+      "actions": 5855,
+      "checkpoints": 343,
+      "reasoning_responses": 4240,
+      "usage_missing": 0,
+      "reasoning_usage_present": 4562,
+      "cached_usage_present": 4562,
+      "length_responses": 0,
+      "api_success_seconds": 46095.57678439189,
+      "api_error_seconds": 3591.8586085881107,
+      "error_to_retry_gap_seconds": 5909.332617247477
+    },
+    "review": {
+      "exits": {
+        "Submitted": 112,
+        "BudgetExhausted": 6,
+        "PhaseTimeout": 30,
+        "ReadOnlyViolation": 2,
+        "TaskBudgetExhausted": 1,
+        "LimitsExceeded": 2,
+        "PhaseError": 1
+      },
+      "verdicts": {
+        "unverified": 140,
+        "request_changes": 13,
+        "approve": 1
+      },
+      "started": 147,
+      "elapsed": {
+        "n": 147,
+        "total": 40815.25713910302,
+        "mean": 277.6548104700886,
+        "median": 261.0037682307884,
+        "p90": 410.9206751818769,
+        "p95": 454.12691114712504,
+        "min": 14.48160850489512,
+        "max": 568.8028064137325
+      },
+      "prompt_tokens": 42590336,
+      "completion_tokens": 1790738,
+      "total_tokens": 44381074,
+      "reasoning_tokens": 797182,
+      "cached_tokens": 34926848,
+      "model_requests": 3392,
+      "model_responses": 2851,
+      "api_errors": 537,
+      "inflight_requests": 4,
+      "actions": 3815,
+      "checkpoints": 389,
+      "reasoning_responses": 2761,
+      "usage_missing": 0,
+      "reasoning_usage_present": 2851,
+      "cached_usage_present": 2851,
+      "length_responses": 0,
+      "api_success_seconds": 27792.50698281871,
+      "api_error_seconds": 1528.544425251428,
+      "error_to_retry_gap_seconds": 2424.4012627271004
+    },
+    "revision": {
+      "exits": {
+        "PhaseTimeout": 39,
+        "BudgetExhausted": 42,
+        "Submitted": 72,
+        "SkippedApproved": 1
+      },
+      "verdicts": {
+        "None": 112,
+        "unverified": 42
+      },
+      "started": 111,
+      "elapsed": {
+        "n": 111,
+        "total": 14245.814030355774,
+        "mean": 128.3406669401421,
+        "median": 132.00386471301317,
+        "p90": 187.7620808519423,
+        "p95": 236.89242574223317,
+        "min": 8.210734905675054,
+        "max": 337.4177140966058
+      },
+      "prompt_tokens": 15544926,
+      "completion_tokens": 583515,
+      "total_tokens": 16128441,
+      "reasoning_tokens": 218293,
+      "cached_tokens": 11616512,
+      "model_requests": 1171,
+      "model_responses": 991,
+      "api_errors": 174,
+      "inflight_requests": 6,
+      "actions": 1347,
+      "checkpoints": 179,
+      "reasoning_responses": 956,
+      "usage_missing": 0,
+      "reasoning_usage_present": 991,
+      "cached_usage_present": 991,
+      "length_responses": 0,
+      "api_success_seconds": 9058.085952866822,
+      "api_error_seconds": 752.439801406581,
+      "error_to_retry_gap_seconds": 696.1036554048769
+    },
+    "final_review": {
+      "exits": {
+        "BudgetExhausted": 88,
+        "Submitted": 26,
+        "PhaseTimeout": 29,
+        "PhaseError": 9,
+        "SkippedApproved": 1,
+        "ReadOnlyViolation": 1
+      },
+      "verdicts": {
+        "unverified": 150,
+        "request_changes": 3,
+        "approve": 1
+      },
+      "started": 56,
+      "elapsed": {
+        "n": 56,
+        "total": 6038.543869291432,
+        "mean": 107.8311405230613,
+        "median": 103.38916108082049,
+        "p90": 212.71532923541963,
+        "p95": 241.78585495520383,
+        "min": 7.354720883071423,
+        "max": 302.14669409208
+      },
+      "prompt_tokens": 6614655,
+      "completion_tokens": 261683,
+      "total_tokens": 6876338,
+      "reasoning_tokens": 87683,
+      "cached_tokens": 4646656,
+      "model_requests": 465,
+      "model_responses": 376,
+      "api_errors": 88,
+      "inflight_requests": 1,
+      "actions": 513,
+      "checkpoints": 102,
+      "reasoning_responses": 374,
+      "usage_missing": 0,
+      "reasoning_usage_present": 376,
+      "cached_usage_present": 376,
+      "length_responses": 0,
+      "api_success_seconds": 3880.654928191565,
+      "api_error_seconds": 265.1815606155433,
+      "error_to_retry_gap_seconds": 296.0455163088627
+    }
+  },
+  "outcomes": {
+    "resolved": {
+      "n": 102,
+      "tokens": {
+        "n": 102,
+        "total": 137890077,
+        "mean": 1351863.5,
+        "median": 1344398.5,
+        "p90": 1801132.7,
+        "p95": 1878600.8,
+        "min": 501632,
+        "max": 2380538
+      },
+      "seconds": {
+        "n": 102,
+        "total": 138794.829507,
+        "mean": 1360.7336226176471,
+        "median": 1356.159373,
+        "p90": 1495.8093448999998,
+        "p95": 1531.67713945,
+        "min": 1030.147336,
+        "max": 1634.431368
+      }
+    },
+    "unresolved": {
+      "n": 49,
+      "tokens": {
+        "n": 49,
+        "total": 66518694,
+        "mean": 1357524.3673469387,
+        "median": 1204880.0,
+        "p90": 1896664.0000000002,
+        "p95": 1991600.9999999998,
+        "min": 659730,
+        "max": 2895292
+      },
+      "seconds": {
+        "n": 49,
+        "total": 68327.64189500001,
+        "mean": 1394.4416713265307,
+        "median": 1374.169102,
+        "p90": 1494.3001218000002,
+        "p95": 1517.0940756,
+        "min": 1322.125518,
+        "max": 1544.168656
+      }
+    },
+    "empty_patch": {
+      "n": 3,
+      "tokens": {
+        "n": 3,
+        "total": 2393176,
+        "mean": 797725.3333333334,
+        "median": 576751.0,
+        "p90": 1447904.6,
+        "p95": 1556798.7999999998,
+        "min": 150732,
+        "max": 1665693
+      },
+      "seconds": {
+        "n": 3,
+        "total": 3946.8287090000003,
+        "mean": 1315.6095696666666,
+        "median": 1310.206028,
+        "p90": 1331.0190248,
+        "p95": 1333.6206494,
+        "min": 1300.400407,
+        "max": 1336.222274
+      }
+    }
+  },
+  "api_errors": {
+    "RateLimitError": 2763,
+    "BadGatewayError": 101,
+    "Timeout": 65
+  },
+  "finish_reasons": {
+    "tool_calls": 12184,
+    "stop": 9
+  },
+  "network": {
+    "generation_none": 734,
+    "evaluation_none": 151
+  },
+  "mini_versions": {
+    "2.4.6": 619
+  },
+  "mini_dependency_hashes": {
+    "agents/default.py": [
+      "e8ef8aa365942d739c2ec5cb0879f60f377d2dc2de8ec670aaedf3bafb45a4c2"
+    ],
+    "models/litellm_model.py": [
+      "6df4483bcdc9620b2f9d7f8bb1027a7fb9729b739976cbcf1a9d18fb58c48227"
+    ],
+    "config/benchmarks/swebench.yaml": [
+      "9a9c86ac10428b86b932c972b15fefc2f7b6e92230bac5ebdc47e83232a8315e"
+    ]
+  },
+  "frozen_hash_mismatches": [],
+  "anomalies": [],
+  "empty_patch_ids": [
+    "sphinx-doc__sphinx-9229",
+    "sphinx-doc__sphinx-9320",
+    "sympy__sympy-13031"
+  ]
+}

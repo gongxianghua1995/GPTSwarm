@@ -1,0 +1,16 @@
+{
+  "model": "DeepSeek-V4-Flash-0731",
+  "temperature": 0.2,
+  "task_seconds": 1200,
+  "api_timeout": 300,
+  "command_timeout": 120,
+  "report_seconds": 60,
+  "budget_mode": "shared_task",
+  "phases": {
+    "analysis": {"seconds": 240, "steps": 30, "max_tokens": 16384},
+    "implementation": {"seconds": 420, "steps": 80, "max_tokens": 16384},
+    "review": {"seconds": 240, "steps": 35, "max_tokens": 16384},
+    "revision": {"seconds": 180, "steps": 40, "max_tokens": 16384},
+    "final_review": {"seconds": 120, "steps": 20, "max_tokens": 16384}
+  }
+}

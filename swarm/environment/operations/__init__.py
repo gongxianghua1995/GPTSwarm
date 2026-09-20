@@ -8,6 +8,9 @@ from swarm.environment.operations.final_decision import FinalDecision
 from swarm.environment.operations.crosswords.return_all import ReturnAll
 from swarm.environment.operations.humaneval.unitest_generation import UnitestGeneration
 from swarm.environment.operations.humaneval.code_writing import CodeWriting
+from swarm.environment.operations.swe_bench.direct_answer import SWEDirectAnswer
+from swarm.environment.operations.swe_bench.file_analyse import FileAnalyse
+from swarm.environment.operations.swe_bench.web_search import SWEWebSearch
 
 __all__ = [
     "CombineAnswer",
@@ -20,4 +23,6 @@ __all__ = [
     "ReturnAll",
     "UnitestGeneration",
     "CodeWriting",
+    "SWEDirectAnswer",
+    "SWEWebSearch",
 ]

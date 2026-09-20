@@ -11,6 +11,9 @@ from swarm.environment.agents.gaia.web_io import WebIO
 from swarm.environment.agents.gaia.tool_tot import ToolTOT
 from swarm.environment.agents.gaia.normal_io import NormalIO
 from swarm.environment.agents.humaneval.code_io import CodeIO
+from swarm.environment.agents.swe_bench.code_io import SWECodeIOAgent
+from swarm.environment.agents.swe_bench.code_react import SWEReActAgent
+from swarm.environment.agents.swe_bench.code_agent import SWECodeAgent, SWEReActCodeAgent, SWEMultiStepAgent
 # from swarm.environment.agents.humaneval.code_reflection import CodeReflection
 
 __all__ = [
@@ -27,4 +30,9 @@ __all__ = [
     "NormalIO",
     "WebIO",
     "CodeIO",
+    "SWECodeIOAgent",
+    "SWEReActAgent",
+    "SWECodeAgent",
+    "SWEReActCodeAgent",
+    "SWEMultiStepAgent",
 ]

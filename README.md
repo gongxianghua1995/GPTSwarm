@@ -189,3 +189,7 @@ Please cite our paper if you find the library useful or interesting.
 
 
 
+
+## SWE-bench fixed-team baseline
+
+This fork adds a fixed GPTSwarm team backed by mini-swe-agent. See the [setup and running guide](docs/swebench.md) and the [154-task experiment report](docs/experiments/mini_full_20260918/experiment_report.md), including timing, token usage and per-task metrics. Raw datasets, credentials and execution logs are excluded from Git.
