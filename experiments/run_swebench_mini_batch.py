@@ -16,9 +16,11 @@ import threading
 import time
 from datetime import datetime, timezone
 
-from dotenv import load_dotenv
-
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT))
+
+from dotenv import load_dotenv
+from swarm.environment.agents.swe_bench.mini_benchmark import required_images, is_pro
 
 
 def now():
@@ -64,6 +66,28 @@ def cleanup(run_id):
     return ids
 
 
+def budget_exhaustion_log(out):
+    """Identify hard API quota failures, without exposing credential-bearing logs."""
+    markers = ('budget has been exceeded', 'insufficient_quota',
+               'exceeded your current quota')
+    for path in sorted(out.glob('*/worker.log')):
+        content = path.read_text(errors='replace').lower()
+        if any(marker in content for marker in markers):
+            return str(path.relative_to(out))
+    return None
+
+
+def domain_dependency_busy(state_path, repo):
+    previous = read_json(Path(state_path))
+    if not previous:
+        raise RuntimeError('Dependency batch status is unavailable')
+    unfinished = any(t['repo'] == repo and t['status'] != 'finished'
+                     for t in previous['tasks'].values())
+    if unfinished and previous['status'] != 'running':
+        raise RuntimeError('Dependency domain did not finish successfully')
+    return unfinished
+
+
 def prepare(args):
     batch = Path(args.batch_dir).resolve()
     batch.mkdir(parents=True, exist_ok=False)
@@ -76,11 +100,19 @@ def prepare(args):
     probe = subprocess.check_output([args.mini_python, '-c',
         'import minisweagent; print(minisweagent.__path__[0])'], text=True)
     mini_source = Path(probe.strip().splitlines()[-1])
+    worker_versions = json.loads(subprocess.check_output([args.mini_python, '-c',
+        'import json, platform\nfrom importlib.metadata import version, PackageNotFoundError\n'
+        'try: swebench_version = version("swebench")\n'
+        'except PackageNotFoundError: swebench_version = None\n'
+        'print(json.dumps(dict(python=platform.python_version(), '
+        'mini_swe_agent=version("mini-swe-agent"), swebench=swebench_version)))'], text=True))
     shutil.copytree(mini_source, snapshot / 'minisweagent',
                     ignore=shutil.ignore_patterns('__pycache__', '*.pyc', '.env'))
     shutil.copyfile(args.data_path, batch / 'dataset.json')
     shutil.copyfile(args.config, batch / 'config.json')
     rows = read_json(batch / 'dataset.json')
+    if any(is_pro(r) for r in rows) and not str(worker_versions['swebench']).startswith('5.'):
+        raise ValueError('Pro evaluation requires swebench 5.x in --mini-python')
     ids = [r['instance_id'] for r in rows]
     if len(ids) != len(set(ids)):
         raise ValueError('Duplicate instance IDs')
@@ -88,9 +120,8 @@ def prepare(args):
                                       '{{.Repository}}:{{.Tag}} {{.ID}}'], text=True, timeout=120)
     installed = dict(line.split() for line in images.splitlines())
     required = {}
-    for iid in ids:
-        for tag in ('swebench/sweb.eval.x86_64.' + iid.replace('__', '_1776_') + ':latest',
-                    'sweb.eval.x86_64.' + iid + ':latest'):
+    for record in rows:
+        for tag in required_images(record):
             if tag not in installed:
                 raise ValueError('Required offline image missing: ' + tag)
             required[tag] = installed[tag]
@@ -101,10 +132,12 @@ def prepare(args):
     domains = {repo: [r['instance_id'] for r in rows if r['repo'] == repo]
                for repo in sorted({r['repo'] for r in rows})}
     manifest = dict(created=now(), batch_id=batch.name, domains=domains, total=len(rows),
+                    benchmark='swebench_pro' if all(is_pro(r) for r in rows) else 'swebench_verified',
                     python=sys.executable, mini_python=str(Path(args.mini_python).absolute()),
+                    worker_versions=worker_versions,
                     credential_env=str(ROOT / '.env'), hashes=hashes, images=required,
                     config=read_json(batch / 'config.json'),
-                    strategy='one sequential generation+official-eval queue per repository',
+                    strategy='one sequential generation+evaluation queue per repository',
                     retries=0, network_mode='none', previous_pilot_results_reused=False,
                     task_process_timeout_seconds=3600)
     write_json(batch / 'manifest.json', manifest)
@@ -128,6 +161,7 @@ def run(batch):
     state = read_json(state_path) or dict(tasks={iid: dict(repo=repo, status='pending', attempts=[])
         for repo, ids in manifest['domains'].items() for iid in ids})
     state.update(pid=os.getpid(), started=now(), status='running', total=manifest['total'])
+    state.pop('pause_reason', None)
     mutex = threading.Lock()
     stop = threading.Event()
 
@@ -141,6 +175,27 @@ def run(batch):
         write_json(state_path, state)
 
     def domain_worker(repo, ids):
+        dependency = manifest.get('domain_dependencies', {}).get(repo)
+        if dependency:
+            with mutex:
+                state.setdefault('waiting_domains', {})[repo] = dependency
+                persist()
+            while domain_dependency_busy(dependency, repo):
+                if stop.wait(5):
+                    return
+            with mutex:
+                state['waiting_domains'].pop(repo, None)
+                persist()
+
+        def check_quota(out, iid):
+            evidence = budget_exhaustion_log(out) if manifest.get('pause_on_api_budget_exhaustion') else None
+            if evidence:
+                with mutex:
+                    state['pause_reason'] = dict(reason='api_budget_exhausted',
+                                                 instance_id=iid, evidence=str(out / evidence))
+                    stop.set()
+                    persist()
+
         for iid in ids:
             if stop.is_set():
                 return
@@ -175,9 +230,14 @@ def run(batch):
                         attempt['pid'] = proc.pid
                         persist()
                     deadline = time.monotonic() + manifest['task_process_timeout_seconds']
+                    next_quota_check = 0
                     while proc.poll() is None:
+                        if time.monotonic() >= next_quota_check:
+                            check_quota(out, iid)
+                            next_quota_check = time.monotonic() + 10
                         if stop.wait(2) or time.monotonic() > deadline:
                             raise TimeoutError('Batch stopped or task process limit reached')
+                check_quota(out, iid)
                 result = classify(out, iid, proc.returncode)
             except Exception as exc:
                 result = dict(outcome='process_error', error=type(exc).__name__)

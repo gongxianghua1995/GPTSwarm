@@ -11,6 +11,8 @@ import uuid
 from pathlib import Path
 from .mini_prompts import role_task, handoff_messages
 from .mini_protocol import parse_handoff, assess_review
+from .mini_benchmark import is_pro, image_name, task_text
+from .mini_repository import isolate_history_command
 
 
 def digest(text):
@@ -38,7 +40,9 @@ def permission_only_diff(raw):
 
 def is_test_path(path):
     parts = Path(path).parts
-    return any(p in {'test', 'tests', '__tests__'} for p in parts) or Path(path).name.startswith('test_')
+    return (any(p in {'test', 'tests', '__tests__'} for p in parts)
+            or Path(path).name.startswith('test_') or path.endswith('_test.go')
+            or bool(re.search(r'\.(?:test|spec)\.[cm]?[jt]sx?$', path)))
 
 
 async def command(argv, *, seconds=120, input_text=None, check=True):
@@ -97,7 +101,10 @@ class MiniRuntime:
         self.initial_untracked = {}
         self.main = None
         self.base = record['base_commit']
-        self.cwd = '/testbed'
+        self.cwd = '/app' if is_pro(record) else '/testbed'
+        self.shell_env = [] if is_pro(record) else ['BASH_ENV=/root/.bashrc']
+        if record.get('repo') == 'ansible/ansible':
+            self.shell_env.append('PYTHONPATH=/app/lib')
 
     def event(self, event, **values):
         with (self.out / 'runtime.jsonl').open('a') as stream:
@@ -105,20 +112,22 @@ class MiniRuntime:
                                          **values), ensure_ascii=False) + '\n')
 
     async def shell(self, container, script, *, seconds=120, input_text=None, check=True):
-        argv = ['docker', 'exec', '-i', '-w', self.cwd, '-e', 'BASH_ENV=/root/.bashrc',
+        argv = ['docker', 'exec', '-i', '-w', self.cwd,
+                *[part for value in self.shell_env for part in ['-e', value]],
                 container, 'timeout', '-k', '2', str(seconds), 'bash', '-o', 'pipefail', '-c', script]
         return await command(argv, seconds=seconds+5, input_text=input_text, check=check)
 
     async def start_workspace(self, purpose, patch=''):
         name = 'gptswarm_mini_' + purpose + '_' + uuid.uuid4().hex[:12]
-        image = 'swebench/sweb.eval.x86_64.' + self.record['instance_id'].replace('__', '_1776_') + ':latest'
+        image = image_name(self.record)
         self.containers.add(name)
         await command(['docker', 'run', '-d', '--name', name, '--network', 'none',
                        '--label', 'gptswarm.run=' + self.out.name,
                        '-w', self.cwd, '--entrypoint', '/bin/bash', image,
                        '-c', 'exec tail -f /dev/null'])
         inspection = json.loads((await command(['docker', 'inspect', name]))['output'])[0]
-        if inspection['HostConfig']['NetworkMode'] != 'none':
+        if (inspection['HostConfig']['NetworkMode'] != 'none'
+                or any(n != 'none' for n in inspection['NetworkSettings']['Networks'])):
             raise RuntimeError('Generation container is not network isolated')
         head = (await self.shell(name, 'git rev-parse HEAD'))['output'].strip()
         if head != self.base:
@@ -136,6 +145,30 @@ class MiniRuntime:
                            else 'image_baseline_difference', container=name, image=image,
                            files=len(raw.split('\0'))//2,
                            policy='restore exact dataset base before agent access')
+        if is_pro(self.record):
+            # Pro installers update dependency manifests without changing
+            # installed dependencies. Restore only these known setup artifacts;
+            # unexpected tracked source edits remain a preparation error.
+            dirty = (await self.shell(name, 'git diff HEAD --ignore-submodules=untracked --name-only -z'))['output']
+            setup_paths = set(filter(None, dirty.split('\0')))
+            allowed = {'yarn.lock', 'package-lock.json', 'requirements.txt'}
+            if self.record['repo'] == 'flipt-io/flipt':
+                allowed.add('go.work.sum')  # populated by cached module installation
+            if self.record['repo'] == 'internetarchive/openlibrary':
+                # Image's Selenium/headless/PyYAML compatibility edits. These
+                # are test setup, not candidate code; restore exact task base.
+                allowed.add('tests/integration/__init__.py')
+            if self.record['repo'] == 'protonmail/webclients':
+                allowed.update({'applications/drive/public/assets/sandbox.js',
+                                'applications/mail/public/assets/sandbox.js'})
+            if setup_paths - allowed:
+                raise RuntimeError('Unexpected Pro image source changes: ' + repr(sorted(setup_paths - allowed)))
+            if setup_paths:
+                await self.shell(name, 'git checkout HEAD -- ' + ' '.join(shlex.quote(p) for p in sorted(setup_paths)))
+                self.event('image_setup_restored', files=sorted(setup_paths), container=name)
+            # A preinstalled submodule may contain an untracked import symlink.
+            # Preserve it and its dependency tree, but remove all future history.
+            await self.shell(name, 'git config diff.ignoreSubmodules untracked')
         dirty = (await self.shell(name, 'git diff HEAD --name-only'))['output']
         if dirty.strip():
             raise RuntimeError('Image contains tracked modifications before generation')
@@ -146,7 +179,7 @@ class MiniRuntime:
         await self.shell(name, 'git diff --exit-code HEAD -- && git diff --cached --exit-code HEAD --')
         # Clone only the current commit over the local transport. Remove the
         # original object store, refs and reflogs from this disposable container.
-        script = '''set -eu
+        script = isolate_history_command(self.base) if is_pro(self.record) else '''set -eu
 swarm_git_tmp=$(mktemp -d /tmp/swarm-git.XXXXXXXX)
 git clone --quiet --no-local --depth 1 --no-checkout "file://$PWD" "$swarm_git_tmp"
 rm -rf .git
@@ -157,6 +190,8 @@ git remote remove origin
 test "$(git rev-list --all --count)" = 1
 '''
         await self.shell(name, script)
+        if is_pro(self.record):
+            await self.shell(name, 'git config diff.ignoreSubmodules untracked')
         shallow = (await self.shell(name, 'git rev-parse --is-shallow-repository'))['output'].strip()
         if shallow != 'true':
             raise RuntimeError('Expected a base-only shallow repository')
@@ -252,6 +287,7 @@ git diff --cached --binary HEAD
                 raise asyncio.TimeoutError()
             task = self.assignment(phase, role, messages)
             request = dict(task=task, role=role, phase=phase, container=container, cwd=self.cwd,
+                           shell_env=self.shell_env,
                            baseline_container=baseline_container, incoming_messages=handoff_messages(messages),
                            report_seconds=self.config.get('report_seconds', 60),
                            soft_seconds=max(0, limit['seconds'] - (time.monotonic() - phase_started)),
@@ -333,4 +369,4 @@ git diff --cached --binary HEAD
                 await self.stop_workspace(baseline_container)
 
     def assignment(self, phase, role, messages):
-        return role_task(phase, role, self.cwd, self.record['problem_statement'], messages)
+        return role_task(phase, role, self.cwd, task_text(self.record), messages)

@@ -1,0 +1,1338 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-09-22T01:31:15.001224+00:00",
+  "original_batch": "mini_pro_full_20260920_domains_v2",
+  "retry_batch": "mini_pro_retry_20260921_budget_v1",
+  "config": {
+    "model": "DeepSeek-V4-Flash-0731",
+    "temperature": 0.2,
+    "task_seconds": 1200,
+    "api_timeout": 300,
+    "command_timeout": 120,
+    "report_seconds": 60,
+    "budget_mode": "shared_task",
+    "phases": {
+      "analysis": {
+        "seconds": 240,
+        "steps": 30,
+        "max_tokens": 16384
+      },
+      "implementation": {
+        "seconds": 420,
+        "steps": 80,
+        "max_tokens": 16384
+      },
+      "review": {
+        "seconds": 240,
+        "steps": 35,
+        "max_tokens": 16384
+      },
+      "revision": {
+        "seconds": 180,
+        "steps": 40,
+        "max_tokens": 16384
+      },
+      "final_review": {
+        "seconds": 120,
+        "steps": 20,
+        "max_tokens": 16384
+      }
+    },
+    "benchmark": "swebench_pro"
+  },
+  "worker_versions": {
+    "python": "3.11.15",
+    "mini_swe_agent": "2.4.6",
+    "swebench": "5.0.2"
+  },
+  "timing": {
+    "started": "2026-09-20T04:21:06.859881+00:00",
+    "finished": "2026-09-21T14:15:56.085222+00:00",
+    "campaign_wall_seconds": 122089.225341,
+    "original_started": "2026-09-20T04:21:06.859881+00:00",
+    "original_finished": "2026-09-21T01:48:26.903474+00:00",
+    "original_wall_seconds": 77240.043593,
+    "retry_initial_started": "2026-09-21T01:26:59.968682+00:00",
+    "retry_resumed_started": "2026-09-21T09:23:45.736473+00:00",
+    "pause_started": "2026-09-21T06:19:15.696540+00:00",
+    "retry_finished": "2026-09-21T14:15:56.085222+00:00",
+    "retry_wall_seconds": 46136.11654,
+    "pause_seconds": 11070.039933,
+    "active_controller_intervals": [
+      [
+        "2026-09-20T04:21:06.859881+00:00",
+        "2026-09-21T06:19:15.696540+00:00"
+      ],
+      [
+        "2026-09-21T09:23:45.736473+00:00",
+        "2026-09-21T14:15:56.085222+00:00"
+      ]
+    ],
+    "active_controller_seconds": 111019.18540799999
+  },
+  "scopes": {
+    "selected": {
+      "n": 216,
+      "outcomes": {
+        "unresolved": 116,
+        "resolved": 100
+      },
+      "task_seconds": {
+        "n": 216,
+        "total": 270847.14650500007,
+        "mean": 1253.9219745601852,
+        "median": 1250.1196955,
+        "p90": 1339.1509234999999,
+        "p95": 1370.17661275,
+        "min": 826.127719,
+        "max": 1576.143067
+      },
+      "task_tokens": {
+        "n": 216,
+        "total": 265968885,
+        "mean": 1231337.4305555555,
+        "median": 1134436.5,
+        "p90": 1787878.5,
+        "p95": 2106166.75,
+        "min": 248232,
+        "max": 3485957
+      },
+      "prompt_tokens": 257589529,
+      "completion_tokens": 8379356,
+      "total_tokens": 265968885,
+      "reasoning_tokens": 4235940,
+      "cached_tokens": 228723968,
+      "model_requests": 15964,
+      "model_responses": 12975,
+      "api_errors": 2964,
+      "inflight_requests": 25,
+      "actions": 19054,
+      "checkpoints": 1499,
+      "reasoning_responses": 11882,
+      "usage_missing": 0,
+      "reasoning_usage_present": 12975,
+      "cached_usage_present": 12975,
+      "length_responses": 1,
+      "api_success_seconds": 177418.5378307472,
+      "api_error_seconds": 17471.9894308378,
+      "error_to_retry_gap_seconds": 14278.571218316443,
+      "generation_trace_seconds": {
+        "n": 216,
+        "total": 257140.73894802295,
+        "mean": 1190.4663840186247,
+        "median": 1205.190868844511,
+        "p90": 1208.8486048544291,
+        "p95": 1211.993713217089,
+        "min": 792.299642059952,
+        "max": 1221.8467987109907
+      },
+      "residual_seconds": {
+        "n": 216,
+        "total": 13706.40755697705,
+        "mean": 63.45559054156043,
+        "median": 44.3057907702256,
+        "p90": 131.4568465810031,
+        "p95": 164.38478263905427,
+        "min": 31.781811514694027,
+        "max": 358.21461005977744
+      },
+      "all_roles_completed": 22,
+      "phase_exit_counts": {
+        "Submitted": 592,
+        "TaskBudgetExhausted": 2,
+        "BudgetExhausted": 285,
+        "SkippedApproved": 6,
+        "PhaseTimeout": 151,
+        "LimitsExceeded": 2,
+        "ReadOnlyViolation": 26,
+        "RateLimitError": 1,
+        "PhaseError": 15
+      },
+      "generation_status_counts": {
+        "completed_with_role_failures": 194,
+        "completed": 22
+      },
+      "role_completion_outcomes": {
+        "complete": {
+          "unresolved": 7,
+          "resolved": 15
+        },
+        "incomplete": {
+          "unresolved": 109,
+          "resolved": 85
+        }
+      },
+      "patch_applied": 202,
+      "tests_status_available": 202,
+      "infra_failures": 1,
+      "detailed_eval_reports": 216,
+      "implementation_patch_comparable": 216,
+      "implementation_patch_unchanged": 208,
+      "api_error_types": {
+        "BadGatewayError": 75,
+        "RateLimitError": 2784,
+        "Timeout": 105
+      },
+      "finish_reasons": {
+        "length": 1,
+        "stop": 22,
+        "tool_calls": 12952
+      },
+      "tasks_with_api_errors": 202,
+      "tasks_with_rate_limits": 186,
+      "hard_budget_error_attempts": 0,
+      "network": {
+        "generation_network_none": 940,
+        "evaluation_network_none": 216
+      }
+    },
+    "all_attempts": {
+      "n": 308,
+      "outcomes": {
+        "unresolved": 120,
+        "resolved": 100,
+        "empty_patch": 85,
+        "process_error": 3
+      },
+      "task_seconds": {
+        "n": 308,
+        "total": 381925.43414700014,
+        "mean": 1240.0176433344157,
+        "median": 1240.1826995000001,
+        "p90": 1308.7177205,
+        "p95": 1358.15812765,
+        "min": 340.68381,
+        "max": 1576.143067
+      },
+      "task_tokens": {
+        "n": 308,
+        "total": 271466895,
+        "mean": 881386.0227272727,
+        "median": 952964.5,
+        "p90": 1713748.3,
+        "p95": 1874640.4999999998,
+        "min": 0,
+        "max": 3485957
+      },
+      "prompt_tokens": 262897748,
+      "completion_tokens": 8569147,
+      "total_tokens": 271466895,
+      "reasoning_tokens": 4337970,
+      "cached_tokens": 233447424,
+      "model_requests": 20424,
+      "model_responses": 13290,
+      "api_errors": 7107,
+      "inflight_requests": 27,
+      "actions": 19523,
+      "checkpoints": 1535,
+      "reasoning_responses": 12156,
+      "usage_missing": 0,
+      "reasoning_usage_present": 13290,
+      "cached_usage_present": 13290,
+      "length_responses": 1,
+      "api_success_seconds": 180692.18082323298,
+      "api_error_seconds": 21897.375971871894,
+      "error_to_retry_gap_seconds": 107884.94916698104,
+      "api_error_types": {
+        "BadGatewayError": 92,
+        "RateLimitError": 6906,
+        "Timeout": 109
+      },
+      "finish_reasons": {
+        "length": 1,
+        "stop": 22,
+        "tool_calls": 13267
+      },
+      "tasks_with_api_errors": 294,
+      "tasks_with_rate_limits": 278,
+      "hard_budget_error_attempts": 90,
+      "network": {
+        "generation_network_none": 1478,
+        "evaluation_network_none": 220
+      }
+    },
+    "superseded_original": {
+      "n": 89,
+      "outcomes": {
+        "empty_patch": 85,
+        "unresolved": 4
+      },
+      "task_seconds": {
+        "n": 89,
+        "total": 108643.20814599999,
+        "mean": 1220.7102038876405,
+        "median": 1218.17292,
+        "p90": 1220.134106,
+        "p95": 1221.3435612,
+        "min": 1216.111353,
+        "max": 1282.119691
+      },
+      "task_tokens": {
+        "n": 89,
+        "total": 2540602,
+        "mean": 28546.08988764045,
+        "median": 0.0,
+        "p90": 0.0,
+        "p95": 113786.59999999955,
+        "min": 0,
+        "max": 775103
+      },
+      "prompt_tokens": 2435553,
+      "completion_tokens": 105049,
+      "total_tokens": 2540602,
+      "reasoning_tokens": 61947,
+      "cached_tokens": 2146816,
+      "model_requests": 4281,
+      "model_responses": 153,
+      "api_errors": 4128,
+      "inflight_requests": 0,
+      "actions": 232,
+      "checkpoints": 19,
+      "reasoning_responses": 126,
+      "usage_missing": 0,
+      "reasoning_usage_present": 153,
+      "cached_usage_present": 153,
+      "length_responses": 0,
+      "api_success_seconds": 1613.6155580370687,
+      "api_error_seconds": 4367.570221082773,
+      "error_to_retry_gap_seconds": 93538.36406028969
+    },
+    "interrupted_retry": {
+      "n": 3,
+      "outcomes": {
+        "process_error": 3
+      },
+      "task_seconds": {
+        "n": 3,
+        "total": 2435.079496,
+        "mean": 811.6931653333334,
+        "median": 989.194292,
+        "p90": 1081.9999736,
+        "p95": 1093.6006837999998,
+        "min": 340.68381,
+        "max": 1105.201394
+      },
+      "task_tokens": {
+        "n": 3,
+        "total": 2957408,
+        "mean": 985802.6666666666,
+        "median": 1131491.0,
+        "p90": 1520612.6,
+        "p95": 1569252.7999999998,
+        "min": 208024,
+        "max": 1617893
+      },
+      "prompt_tokens": 2872666,
+      "completion_tokens": 84742,
+      "total_tokens": 2957408,
+      "reasoning_tokens": 40083,
+      "cached_tokens": 2576640,
+      "model_requests": 179,
+      "model_responses": 162,
+      "api_errors": 15,
+      "inflight_requests": 2,
+      "actions": 237,
+      "checkpoints": 17,
+      "reasoning_responses": 148,
+      "usage_missing": 0,
+      "reasoning_usage_present": 162,
+      "cached_usage_present": 162,
+      "length_responses": 0,
+      "api_success_seconds": 1660.0274344487116,
+      "api_error_seconds": 57.81631995132193,
+      "error_to_retry_gap_seconds": 68.01388837490231
+    },
+    "original_batch": {
+      "n": 216,
+      "outcomes": {
+        "unresolved": 70,
+        "resolved": 61,
+        "empty_patch": 85
+      },
+      "task_seconds": {
+        "n": 216,
+        "total": 268112.94664000015,
+        "mean": 1241.2636418518518,
+        "median": 1238.119389,
+        "p90": 1297.1216570000001,
+        "p95": 1354.62045725,
+        "min": 870.102741,
+        "max": 1576.143067
+      },
+      "task_tokens": {
+        "n": 216,
+        "total": 159244239,
+        "mean": 737241.8472222222,
+        "median": 849060.0,
+        "p90": 1583812.5,
+        "p95": 1735553.75,
+        "min": 0,
+        "max": 3485957
+      },
+      "prompt_tokens": 154383400,
+      "completion_tokens": 4860839,
+      "total_tokens": 159244239,
+      "reasoning_tokens": 2382664,
+      "cached_tokens": 136397312,
+      "model_requests": 14310,
+      "model_responses": 7822,
+      "api_errors": 6477,
+      "inflight_requests": 11,
+      "actions": 11600,
+      "checkpoints": 907,
+      "reasoning_responses": 7191,
+      "usage_missing": 0,
+      "reasoning_usage_present": 7822,
+      "cached_usage_present": 7822,
+      "length_responses": 1,
+      "api_success_seconds": 100866.57119516609,
+      "api_error_seconds": 17067.523563439492,
+      "error_to_retry_gap_seconds": 105123.97421804816
+    },
+    "retry_batch": {
+      "n": 92,
+      "outcomes": {
+        "unresolved": 50,
+        "resolved": 39,
+        "process_error": 3
+      },
+      "task_seconds": {
+        "n": 92,
+        "total": 113812.48750699995,
+        "mean": 1237.0922555108696,
+        "median": 1252.4119375,
+        "p90": 1326.9995226,
+        "p95": 1369.09218635,
+        "min": 340.68381,
+        "max": 1440.2037
+      },
+      "task_tokens": {
+        "n": 92,
+        "total": 112222656,
+        "mean": 1219811.4782608696,
+        "median": 1119405.5,
+        "p90": 1900858.5000000005,
+        "p95": 2184899.85,
+        "min": 208024,
+        "max": 3255963
+      },
+      "prompt_tokens": 108514348,
+      "completion_tokens": 3708308,
+      "total_tokens": 112222656,
+      "reasoning_tokens": 1955306,
+      "cached_tokens": 97050112,
+      "model_requests": 6114,
+      "model_responses": 5468,
+      "api_errors": 630,
+      "inflight_requests": 16,
+      "actions": 7923,
+      "checkpoints": 628,
+      "reasoning_responses": 4965,
+      "usage_missing": 0,
+      "reasoning_usage_present": 5468,
+      "cached_usage_present": 5468,
+      "length_responses": 0,
+      "api_success_seconds": 79825.60962806689,
+      "api_error_seconds": 4829.852408432402,
+      "error_to_retry_gap_seconds": 2760.9749489328824
+    }
+  },
+  "domains": {
+    "ansible/ansible": {
+      "n": 63,
+      "outcomes": {
+        "unresolved": 32,
+        "resolved": 31
+      },
+      "task_seconds": {
+        "n": 63,
+        "total": 77711.08939400001,
+        "mean": 1233.5093554603175,
+        "median": 1242.116614,
+        "p90": 1253.9416626000002,
+        "p95": 1263.6992632,
+        "min": 996.15891,
+        "max": 1272.348934
+      },
+      "task_tokens": {
+        "n": 63,
+        "total": 94081353,
+        "mean": 1493354.8095238095,
+        "median": 1520288.0,
+        "p90": 2167761.4,
+        "p95": 2641434.9999999995,
+        "min": 426471,
+        "max": 3485957
+      },
+      "prompt_tokens": 91139614,
+      "completion_tokens": 2941739,
+      "total_tokens": 94081353,
+      "reasoning_tokens": 1577723,
+      "cached_tokens": 81468416,
+      "model_requests": 4901,
+      "model_responses": 4099,
+      "api_errors": 795,
+      "inflight_requests": 7,
+      "actions": 5848,
+      "checkpoints": 467,
+      "reasoning_responses": 3764,
+      "usage_missing": 0,
+      "reasoning_usage_present": 4099,
+      "cached_usage_present": 4099,
+      "length_responses": 0,
+      "api_success_seconds": 57937.98539035674,
+      "api_error_seconds": 4732.659441868309,
+      "error_to_retry_gap_seconds": 3752.543148734607,
+      "all_attempts": {
+        "n": 91,
+        "outcomes": {
+          "unresolved": 33,
+          "resolved": 31,
+          "empty_patch": 26,
+          "process_error": 1
+        },
+        "task_seconds": {
+          "n": 91,
+          "total": 111013.05715800003,
+          "mean": 1219.923705032967,
+          "median": 1238.181503,
+          "p90": 1250.266352,
+          "p95": 1256.4308025,
+          "min": 340.68381,
+          "max": 1272.348934
+        },
+        "task_tokens": {
+          "n": 91,
+          "total": 95131451,
+          "mean": 1045400.5604395604,
+          "median": 1076907.0,
+          "p90": 1868849.0,
+          "p95": 2301663.5,
+          "min": 0,
+          "max": 3485957
+        },
+        "prompt_tokens": 92134670,
+        "completion_tokens": 2996781,
+        "total_tokens": 95131451,
+        "reasoning_tokens": 1616477,
+        "cached_tokens": 82340352,
+        "model_requests": 6205,
+        "model_responses": 4151,
+        "api_errors": 2046,
+        "inflight_requests": 8,
+        "actions": 5929,
+        "checkpoints": 473,
+        "reasoning_responses": 3808,
+        "usage_missing": 0,
+        "reasoning_usage_present": 4151,
+        "cached_usage_present": 4151,
+        "length_responses": 0,
+        "api_success_seconds": 58593.89536096249,
+        "api_error_seconds": 5960.367303755134,
+        "error_to_retry_gap_seconds": 32053.260924751405
+      },
+      "retry_tasks": 27
+    },
+    "flipt-io/flipt": {
+      "n": 54,
+      "outcomes": {
+        "unresolved": 39,
+        "resolved": 15
+      },
+      "task_seconds": {
+        "n": 54,
+        "total": 68335.81823099998,
+        "mean": 1265.478115388889,
+        "median": 1266.1563675,
+        "p90": 1300.1987795,
+        "p95": 1323.0296677,
+        "min": 970.090714,
+        "max": 1374.653743
+      },
+      "task_tokens": {
+        "n": 54,
+        "total": 62239686,
+        "mean": 1152586.7777777778,
+        "median": 1094652.5,
+        "p90": 1580976.1,
+        "p95": 1816129.4499999993,
+        "min": 485262,
+        "max": 2170158
+      },
+      "prompt_tokens": 60472353,
+      "completion_tokens": 1767333,
+      "total_tokens": 62239686,
+      "reasoning_tokens": 857080,
+      "cached_tokens": 53903872,
+      "model_requests": 3821,
+      "model_responses": 3094,
+      "api_errors": 723,
+      "inflight_requests": 4,
+      "actions": 4676,
+      "checkpoints": 316,
+      "reasoning_responses": 2803,
+      "usage_missing": 0,
+      "reasoning_usage_present": 3094,
+      "cached_usage_present": 3094,
+      "length_responses": 0,
+      "api_success_seconds": 40630.63272776315,
+      "api_error_seconds": 4532.664731159806,
+      "error_to_retry_gap_seconds": 3277.0349058108404,
+      "all_attempts": {
+        "n": 79,
+        "outcomes": {
+          "unresolved": 40,
+          "resolved": 15,
+          "empty_patch": 23,
+          "process_error": 1
+        },
+        "task_seconds": {
+          "n": 79,
+          "total": 98734.12474799999,
+          "mean": 1249.799047443038,
+          "median": 1260.120736,
+          "p90": 1291.3183526,
+          "p95": 1310.9221719,
+          "min": 970.090714,
+          "max": 1374.653743
+        },
+        "task_tokens": {
+          "n": 79,
+          "total": 63934483,
+          "mean": 809297.2531645569,
+          "median": 945885.0,
+          "p90": 1495638.2,
+          "p95": 1670259.4999999993,
+          "min": 0,
+          "max": 2170158
+        },
+        "prompt_tokens": 62121656,
+        "completion_tokens": 1812827,
+        "total_tokens": 63934483,
+        "reasoning_tokens": 878202,
+        "cached_tokens": 55352832,
+        "model_requests": 5068,
+        "model_responses": 3204,
+        "api_errors": 1860,
+        "inflight_requests": 4,
+        "actions": 4842,
+        "checkpoints": 327,
+        "reasoning_responses": 2897,
+        "usage_missing": 0,
+        "reasoning_usage_present": 3204,
+        "cached_usage_present": 3204,
+        "length_responses": 0,
+        "api_success_seconds": 41647.7695505037,
+        "api_error_seconds": 5778.096433160361,
+        "error_to_retry_gap_seconds": 28953.68383369036
+      },
+      "retry_tasks": 24
+    },
+    "internetarchive/openlibrary": {
+      "n": 60,
+      "outcomes": {
+        "unresolved": 22,
+        "resolved": 38
+      },
+      "task_seconds": {
+        "n": 60,
+        "total": 72432.505662,
+        "mean": 1207.2084277,
+        "median": 1240.122695,
+        "p90": 1250.3771305999999,
+        "p95": 1254.6261041,
+        "min": 826.127719,
+        "max": 1266.174
+      },
+      "task_tokens": {
+        "n": 60,
+        "total": 72171130,
+        "mean": 1202852.1666666667,
+        "median": 1201624.5,
+        "p90": 1693897.1,
+        "p95": 1879527.5,
+        "min": 463681,
+        "max": 2213192
+      },
+      "prompt_tokens": 69630164,
+      "completion_tokens": 2540966,
+      "total_tokens": 72171130,
+      "reasoning_tokens": 1258200,
+      "cached_tokens": 61246464,
+      "model_requests": 4673,
+      "model_responses": 3799,
+      "api_errors": 861,
+      "inflight_requests": 13,
+      "actions": 5455,
+      "checkpoints": 500,
+      "reasoning_responses": 3497,
+      "usage_missing": 0,
+      "reasoning_usage_present": 3799,
+      "cached_usage_present": 3799,
+      "length_responses": 1,
+      "api_success_seconds": 52412.32146729203,
+      "api_error_seconds": 4967.930448117666,
+      "error_to_retry_gap_seconds": 4424.597204679158,
+      "all_attempts": {
+        "n": 88,
+        "outcomes": {
+          "unresolved": 23,
+          "resolved": 38,
+          "empty_patch": 26,
+          "process_error": 1
+        },
+        "task_seconds": {
+          "n": 88,
+          "total": 106349.014037,
+          "mean": 1208.5115231477273,
+          "median": 1237.243183,
+          "p90": 1248.8843199,
+          "p95": 1253.5694726,
+          "min": 826.127719,
+          "max": 1266.174
+        },
+        "task_tokens": {
+          "n": 88,
+          "total": 74265158,
+          "mean": 843922.25,
+          "median": 961317.5,
+          "p90": 1615734.2,
+          "p95": 1730942.6,
+          "min": 0,
+          "max": 2213192
+        },
+        "prompt_tokens": 71664438,
+        "completion_tokens": 2600720,
+        "total_tokens": 74265158,
+        "reasoning_tokens": 1284361,
+        "cached_tokens": 63098112,
+        "model_requests": 6055,
+        "model_responses": 3908,
+        "api_errors": 2133,
+        "inflight_requests": 14,
+        "actions": 5613,
+        "checkpoints": 513,
+        "reasoning_responses": 3595,
+        "usage_missing": 0,
+        "reasoning_usage_present": 3908,
+        "cached_usage_present": 3908,
+        "length_responses": 1,
+        "api_success_seconds": 53482.39252921613,
+        "api_error_seconds": 6212.845650938805,
+        "error_to_retry_gap_seconds": 33457.33528076578
+      },
+      "retry_tasks": 27
+    },
+    "protonmail/webclients": {
+      "n": 39,
+      "outcomes": {
+        "resolved": 16,
+        "unresolved": 23
+      },
+      "task_seconds": {
+        "n": 39,
+        "total": 52367.733218000016,
+        "mean": 1342.7623902051282,
+        "median": 1340.122122,
+        "p90": 1408.1880964000002,
+        "p95": 1451.3970875000002,
+        "min": 1246.111084,
+        "max": 1576.143067
+      },
+      "task_tokens": {
+        "n": 39,
+        "total": 37476716,
+        "mean": 960941.4358974359,
+        "median": 941449.0,
+        "p90": 1426867.0000000002,
+        "p95": 1524204.3000000003,
+        "min": 248232,
+        "max": 1867283
+      },
+      "prompt_tokens": 36347398,
+      "completion_tokens": 1129318,
+      "total_tokens": 37476716,
+      "reasoning_tokens": 542937,
+      "cached_tokens": 32105216,
+      "model_requests": 2569,
+      "model_responses": 1983,
+      "api_errors": 585,
+      "inflight_requests": 1,
+      "actions": 3075,
+      "checkpoints": 216,
+      "reasoning_responses": 1818,
+      "usage_missing": 0,
+      "reasoning_usage_present": 1983,
+      "cached_usage_present": 1983,
+      "length_responses": 0,
+      "api_success_seconds": 26437.598245335277,
+      "api_error_seconds": 3238.7348096920177,
+      "error_to_retry_gap_seconds": 2824.3959590918384,
+      "all_attempts": {
+        "n": 50,
+        "outcomes": {
+          "resolved": 16,
+          "unresolved": 24,
+          "empty_patch": 10
+        },
+        "task_seconds": {
+          "n": 50,
+          "total": 65829.23820400002,
+          "mean": 1316.58476408,
+          "median": 1311.1740835,
+          "p90": 1394.9483860999999,
+          "p95": 1436.5750863,
+          "min": 1216.111353,
+          "max": 1576.143067
+        },
+        "task_tokens": {
+          "n": 50,
+          "total": 38135803,
+          "mean": 762716.06,
+          "median": 849060.0,
+          "p90": 1382091.2,
+          "p95": 1498510.55,
+          "min": 0,
+          "max": 1867283
+        },
+        "prompt_tokens": 36976984,
+        "completion_tokens": 1158819,
+        "total_tokens": 38135803,
+        "reasoning_tokens": 558930,
+        "cached_tokens": 32656128,
+        "model_requests": 3096,
+        "model_responses": 2027,
+        "api_errors": 1068,
+        "inflight_requests": 1,
+        "actions": 3139,
+        "checkpoints": 222,
+        "reasoning_responses": 1856,
+        "usage_missing": 0,
+        "reasoning_usage_present": 2027,
+        "cached_usage_present": 2027,
+        "length_responses": 0,
+        "api_success_seconds": 26968.123382550664,
+        "api_error_seconds": 3946.0665840175934,
+        "error_to_retry_gap_seconds": 13420.669127773494
+      },
+      "retry_tasks": 11
+    }
+  },
+  "phases": {
+    "analysis": {
+      "exits": {
+        "Submitted": 203,
+        "ReadOnlyViolation": 11,
+        "RateLimitError": 1,
+        "LimitsExceeded": 1
+      },
+      "verdicts": {
+        "None": 216
+      },
+      "started": 216,
+      "elapsed": {
+        "n": 216,
+        "total": 63451.20641485695,
+        "mean": 293.75558525396735,
+        "median": 277.38179010222666,
+        "p90": 394.39178960607387,
+        "p95": 434.5963778606383,
+        "min": 137.96564856357872,
+        "max": 714.6901967450976
+      },
+      "prompt_tokens": 44111419,
+      "completion_tokens": 1551404,
+      "total_tokens": 45662823,
+      "reasoning_tokens": 661202,
+      "cached_tokens": 37143808,
+      "model_requests": 4410,
+      "model_responses": 3459,
+      "api_errors": 951,
+      "inflight_requests": 0,
+      "actions": 5661,
+      "checkpoints": 437,
+      "reasoning_responses": 3124,
+      "usage_missing": 0,
+      "reasoning_usage_present": 3459,
+      "cached_usage_present": 3459,
+      "length_responses": 0,
+      "api_success_seconds": 42297.99086395744,
+      "api_error_seconds": 4809.045797382016,
+      "error_to_retry_gap_seconds": 5332.674430801533
+    },
+    "implementation": {
+      "exits": {
+        "Submitted": 202,
+        "PhaseTimeout": 14
+      },
+      "verdicts": {
+        "None": 216
+      },
+      "started": 216,
+      "elapsed": {
+        "n": 216,
+        "total": 122675.42748545436,
+        "mean": 567.9417939141406,
+        "median": 559.6034705005586,
+        "p90": 816.9323878572322,
+        "p95": 850.7474370655837,
+        "min": 78.91105842217803,
+        "max": 914.4695072886534
+      },
+      "prompt_tokens": 150189384,
+      "completion_tokens": 4249986,
+      "total_tokens": 154439370,
+      "reasoning_tokens": 2395657,
+      "cached_tokens": 137935104,
+      "model_requests": 7009,
+      "model_responses": 5757,
+      "api_errors": 1250,
+      "inflight_requests": 2,
+      "actions": 8129,
+      "checkpoints": 459,
+      "reasoning_responses": 5149,
+      "usage_missing": 0,
+      "reasoning_usage_present": 5757,
+      "cached_usage_present": 5757,
+      "length_responses": 1,
+      "api_success_seconds": 88363.14528332837,
+      "api_error_seconds": 8544.206233696546,
+      "error_to_retry_gap_seconds": 5849.429274907801
+    },
+    "review": {
+      "exits": {
+        "TaskBudgetExhausted": 1,
+        "Submitted": 111,
+        "PhaseTimeout": 66,
+        "BudgetExhausted": 15,
+        "LimitsExceeded": 1,
+        "ReadOnlyViolation": 15,
+        "PhaseError": 7
+      },
+      "verdicts": {
+        "unverified": 195,
+        "approve": 3,
+        "request_changes": 18
+      },
+      "started": 194,
+      "elapsed": {
+        "n": 194,
+        "total": 48603.08410426136,
+        "mean": 250.53136136217196,
+        "median": 261.39975089463405,
+        "p90": 382.73037011069255,
+        "p95": 428.1302509266883,
+        "min": 5.55645848531276,
+        "max": 519.6618520268239
+      },
+      "prompt_tokens": 44077973,
+      "completion_tokens": 1886050,
+      "total_tokens": 45964023,
+      "reasoning_tokens": 907247,
+      "cached_tokens": 37944576,
+      "model_requests": 3298,
+      "model_responses": 2736,
+      "api_errors": 551,
+      "inflight_requests": 11,
+      "actions": 3822,
+      "checkpoints": 399,
+      "reasoning_responses": 2623,
+      "usage_missing": 0,
+      "reasoning_usage_present": 2736,
+      "cached_usage_present": 2736,
+      "length_responses": 0,
+      "api_success_seconds": 35242.50626490358,
+      "api_error_seconds": 3056.072108658962,
+      "error_to_retry_gap_seconds": 2372.3562025004067
+    },
+    "revision": {
+      "exits": {
+        "BudgetExhausted": 110,
+        "SkippedApproved": 3,
+        "Submitted": 56,
+        "PhaseTimeout": 44,
+        "TaskBudgetExhausted": 1,
+        "PhaseError": 2
+      },
+      "verdicts": {
+        "unverified": 112,
+        "None": 104
+      },
+      "started": 101,
+      "elapsed": {
+        "n": 101,
+        "total": 11555.389574647881,
+        "mean": 114.4097977687909,
+        "median": 118.79757742304355,
+        "p90": 198.909488262143,
+        "p95": 247.52298980019987,
+        "min": 7.900374343153089,
+        "max": 306.8865462918766
+      },
+      "prompt_tokens": 13847456,
+      "completion_tokens": 508816,
+      "total_tokens": 14356272,
+      "reasoning_tokens": 208487,
+      "cached_tokens": 11422464,
+      "model_requests": 911,
+      "model_responses": 753,
+      "api_errors": 149,
+      "inflight_requests": 9,
+      "actions": 1072,
+      "checkpoints": 137,
+      "reasoning_responses": 718,
+      "usage_missing": 0,
+      "reasoning_usage_present": 753,
+      "cached_usage_present": 753,
+      "length_responses": 0,
+      "api_success_seconds": 8641.889290937688,
+      "api_error_seconds": 741.8239308837801,
+      "error_to_retry_gap_seconds": 520.0802175644785
+    },
+    "final_review": {
+      "exits": {
+        "BudgetExhausted": 160,
+        "SkippedApproved": 3,
+        "Submitted": 20,
+        "PhaseTimeout": 27,
+        "PhaseError": 6
+      },
+      "verdicts": {
+        "unverified": 210,
+        "approve": 4,
+        "request_changes": 2
+      },
+      "started": 47,
+      "elapsed": {
+        "n": 47,
+        "total": 4087.0651181740686,
+        "mean": 86.95883230157592,
+        "median": 82.69781548483297,
+        "p90": 168.84464943548664,
+        "p95": 202.7326403718441,
+        "min": 5.6512917671352625,
+        "max": 252.0477836811915
+      },
+      "prompt_tokens": 5363297,
+      "completion_tokens": 183100,
+      "total_tokens": 5546397,
+      "reasoning_tokens": 63347,
+      "cached_tokens": 4278016,
+      "model_requests": 336,
+      "model_responses": 270,
+      "api_errors": 63,
+      "inflight_requests": 3,
+      "actions": 370,
+      "checkpoints": 67,
+      "reasoning_responses": 268,
+      "usage_missing": 0,
+      "reasoning_usage_present": 270,
+      "cached_usage_present": 270,
+      "length_responses": 0,
+      "api_success_seconds": 2873.006127620116,
+      "api_error_seconds": 320.84136021649465,
+      "error_to_retry_gap_seconds": 204.03109254222363
+    }
+  },
+  "outcome_groups": {
+    "resolved": {
+      "n": 100,
+      "outcomes": {
+        "resolved": 100
+      },
+      "task_seconds": {
+        "n": 100,
+        "total": 123976.28982399999,
+        "mean": 1239.76289824,
+        "median": 1242.129551,
+        "p90": 1330.9314319,
+        "p95": 1366.4494040000002,
+        "min": 826.127719,
+        "max": 1576.143067
+      },
+      "task_tokens": {
+        "n": 100,
+        "total": 117916668,
+        "mean": 1179166.68,
+        "median": 1094166.5,
+        "p90": 1752210.8,
+        "p95": 1871062.9999999998,
+        "min": 248232,
+        "max": 2715250
+      },
+      "prompt_tokens": 114009201,
+      "completion_tokens": 3907467,
+      "total_tokens": 117916668,
+      "reasoning_tokens": 1948758,
+      "cached_tokens": 100380416,
+      "model_requests": 7500,
+      "model_responses": 6141,
+      "api_errors": 1350,
+      "inflight_requests": 9,
+      "actions": 8844,
+      "checkpoints": 749,
+      "reasoning_responses": 5616,
+      "usage_missing": 0,
+      "reasoning_usage_present": 6141,
+      "cached_usage_present": 6141,
+      "length_responses": 1,
+      "api_success_seconds": 83647.77597141406,
+      "api_error_seconds": 7690.619226953015,
+      "error_to_retry_gap_seconds": 6148.908577010967
+    },
+    "unresolved": {
+      "n": 116,
+      "outcomes": {
+        "unresolved": 116
+      },
+      "task_seconds": {
+        "n": 116,
+        "total": 146870.85668100003,
+        "mean": 1266.128074836207,
+        "median": 1258.2066315,
+        "p90": 1353.1253769999998,
+        "p95": 1376.52226575,
+        "min": 870.102741,
+        "max": 1552.137575
+      },
+      "task_tokens": {
+        "n": 116,
+        "total": 148052217,
+        "mean": 1276312.2155172413,
+        "median": 1187139.0,
+        "p90": 1852028.5,
+        "p95": 2153341.5,
+        "min": 399535,
+        "max": 3485957
+      },
+      "prompt_tokens": 143580328,
+      "completion_tokens": 4471889,
+      "total_tokens": 148052217,
+      "reasoning_tokens": 2287182,
+      "cached_tokens": 128343552,
+      "model_requests": 8464,
+      "model_responses": 6834,
+      "api_errors": 1614,
+      "inflight_requests": 16,
+      "actions": 10210,
+      "checkpoints": 750,
+      "reasoning_responses": 6266,
+      "usage_missing": 0,
+      "reasoning_usage_present": 6834,
+      "cached_usage_present": 6834,
+      "length_responses": 0,
+      "api_success_seconds": 93770.76185933314,
+      "api_error_seconds": 9781.370203884784,
+      "error_to_retry_gap_seconds": 8129.662641305476
+    }
+  },
+  "retry_policy": {
+    "selected_tasks": 89,
+    "replaced_original_outcomes": {
+      "empty_patch": 85,
+      "unresolved": 4
+    },
+    "rule": "Use the latest completed retry for every preselected ID regardless of outcome; otherwise retain original.",
+    "source_changes": [
+      "dataset.json",
+      "source/experiments/run_swebench_mini_batch.py"
+    ],
+    "resume_probe_tokens": 105
+  },
+  "validation": {
+    "frozen_hash_mismatches": [],
+    "anomalies": [],
+    "dataset_records_equal": true,
+    "selected_image_ids_equal": true,
+    "selected_reports_match": true,
+    "preflight_passed": [
+      216,
+      89
+    ],
+    "evaluation_controls_passed": 8,
+    "mini_versions": {
+      "2.4.6": 1221
+    },
+    "mini_dependency_hashes": {
+      "agents/default.py": [
+        "e8ef8aa365942d739c2ec5cb0879f60f377d2dc2de8ec670aaedf3bafb45a4c2"
+      ],
+      "models/litellm_model.py": [
+        "6df4483bcdc9620b2f9d7f8bb1027a7fb9729b739976cbcf1a9d18fb58c48227"
+      ],
+      "config/benchmarks/swebench.yaml": [
+        "9a9c86ac10428b86b932c972b15fefc2f7b6e92230bac5ebdc47e83232a8315e"
+      ]
+    }
+  },
+  "evaluation_exceptions": [
+    {
+      "instance_id": "instance_flipt-io__flipt-2ce8a0331e8a8f63f2c1b555db8277ffe5aa2e63",
+      "repo": "flipt-io/flipt",
+      "artifact_dir": "mini_pro_full_20260920_domains_v2/instances/mini_pro_full_20260920_domains_v2__instance_flipt-io__flipt-2ce8a0331e8a8f63f2c1b555db8277ffe5aa2e63__a1",
+      "outcome": "unresolved",
+      "patch_applied": false,
+      "tests_status_available": false,
+      "infra_failure": false,
+      "infra_failure_reason": null,
+      "harness_logged_patch_applied": true,
+      "eval_exception_category": "go_build_or_setup_failed"
+    },
+    {
+      "instance_id": "instance_flipt-io__flipt-492cc0b158200089dceede3b1aba0ed28df3fb1d",
+      "repo": "flipt-io/flipt",
+      "artifact_dir": "mini_pro_full_20260920_domains_v2/instances/mini_pro_full_20260920_domains_v2__instance_flipt-io__flipt-492cc0b158200089dceede3b1aba0ed28df3fb1d__a1",
+      "outcome": "unresolved",
+      "patch_applied": false,
+      "tests_status_available": false,
+      "infra_failure": false,
+      "infra_failure_reason": null,
+      "harness_logged_patch_applied": true,
+      "eval_exception_category": "go_build_or_setup_failed"
+    },
+    {
+      "instance_id": "instance_flipt-io__flipt-967855b429f749c28c112b8cb1b15bc79157f973",
+      "repo": "flipt-io/flipt",
+      "artifact_dir": "mini_pro_full_20260920_domains_v2/instances/mini_pro_full_20260920_domains_v2__instance_flipt-io__flipt-967855b429f749c28c112b8cb1b15bc79157f973__a1",
+      "outcome": "unresolved",
+      "patch_applied": false,
+      "tests_status_available": false,
+      "infra_failure": false,
+      "infra_failure_reason": null,
+      "harness_logged_patch_applied": true,
+      "eval_exception_category": "go_build_or_setup_failed"
+    },
+    {
+      "instance_id": "instance_flipt-io__flipt-9d25c18b79bc7829a6fb08ec9e8793d5d17e2868",
+      "repo": "flipt-io/flipt",
+      "artifact_dir": "mini_pro_full_20260920_domains_v2/instances/mini_pro_full_20260920_domains_v2__instance_flipt-io__flipt-9d25c18b79bc7829a6fb08ec9e8793d5d17e2868__a1",
+      "outcome": "unresolved",
+      "patch_applied": false,
+      "tests_status_available": false,
+      "infra_failure": false,
+      "infra_failure_reason": null,
+      "harness_logged_patch_applied": true,
+      "eval_exception_category": "go_build_or_setup_failed"
+    },
+    {
+      "instance_id": "instance_flipt-io__flipt-9f8127f225a86245fa35dca4885c2daef824ee55",
+      "repo": "flipt-io/flipt",
+      "artifact_dir": "mini_pro_full_20260920_domains_v2/instances/mini_pro_full_20260920_domains_v2__instance_flipt-io__flipt-9f8127f225a86245fa35dca4885c2daef824ee55__a1",
+      "outcome": "unresolved",
+      "patch_applied": false,
+      "tests_status_available": false,
+      "infra_failure": false,
+      "infra_failure_reason": null,
+      "harness_logged_patch_applied": true,
+      "eval_exception_category": "go_build_or_setup_failed"
+    },
+    {
+      "instance_id": "instance_protonmail__webclients-6e1873b06df6529a469599aa1d69d3b18f7d9d37",
+      "repo": "protonmail/webclients",
+      "artifact_dir": "mini_pro_full_20260920_domains_v2/instances/mini_pro_full_20260920_domains_v2__instance_protonmail__webclients-6e1873b06df6529a469599aa1d69d3b18f7d9d37__a1",
+      "outcome": "unresolved",
+      "patch_applied": false,
+      "tests_status_available": false,
+      "infra_failure": false,
+      "infra_failure_reason": null,
+      "harness_logged_patch_applied": true,
+      "eval_exception_category": "no_parsed_test_results"
+    },
+    {
+      "instance_id": "instance_protonmail__webclients-944adbfe06644be0789f59b78395bdd8567d8547",
+      "repo": "protonmail/webclients",
+      "artifact_dir": "mini_pro_full_20260920_domains_v2/instances/mini_pro_full_20260920_domains_v2__instance_protonmail__webclients-944adbfe06644be0789f59b78395bdd8567d8547__a1",
+      "outcome": "unresolved",
+      "patch_applied": false,
+      "tests_status_available": false,
+      "infra_failure": false,
+      "infra_failure_reason": null,
+      "harness_logged_patch_applied": true,
+      "eval_exception_category": "no_parsed_test_results"
+    },
+    {
+      "instance_id": "instance_flipt-io__flipt-b2cd6a6dd73ca91b519015fd5924fde8d17f3f06",
+      "repo": "flipt-io/flipt",
+      "artifact_dir": "mini_pro_retry_20260921_budget_v1/instances/mini_pro_retry_20260921_budget_v1__instance_flipt-io__flipt-b2cd6a6dd73ca91b519015fd5924fde8d17f3f06__a1",
+      "outcome": "unresolved",
+      "patch_applied": false,
+      "tests_status_available": false,
+      "infra_failure": false,
+      "infra_failure_reason": null,
+      "harness_logged_patch_applied": true,
+      "eval_exception_category": "go_build_or_setup_failed"
+    },
+    {
+      "instance_id": "instance_flipt-io__flipt-b433bd05ce405837804693bebd5f4b88d87133c8",
+      "repo": "flipt-io/flipt",
+      "artifact_dir": "mini_pro_retry_20260921_budget_v1/instances/mini_pro_retry_20260921_budget_v1__instance_flipt-io__flipt-b433bd05ce405837804693bebd5f4b88d87133c8__a1",
+      "outcome": "unresolved",
+      "patch_applied": false,
+      "tests_status_available": false,
+      "infra_failure": false,
+      "infra_failure_reason": null,
+      "harness_logged_patch_applied": true,
+      "eval_exception_category": "go_build_or_setup_failed"
+    },
+    {
+      "instance_id": "instance_flipt-io__flipt-e2bd19dafa7166c96b082fb2a59eb54b4be0d778",
+      "repo": "flipt-io/flipt",
+      "artifact_dir": "mini_pro_retry_20260921_budget_v1/instances/mini_pro_retry_20260921_budget_v1__instance_flipt-io__flipt-e2bd19dafa7166c96b082fb2a59eb54b4be0d778__a1",
+      "outcome": "unresolved",
+      "patch_applied": false,
+      "tests_status_available": false,
+      "infra_failure": false,
+      "infra_failure_reason": null,
+      "harness_logged_patch_applied": true,
+      "eval_exception_category": "go_build_or_setup_failed"
+    },
+    {
+      "instance_id": "instance_flipt-io__flipt-ee02b164f6728d3227c42671028c67a4afd36918",
+      "repo": "flipt-io/flipt",
+      "artifact_dir": "mini_pro_retry_20260921_budget_v1/instances/mini_pro_retry_20260921_budget_v1__instance_flipt-io__flipt-ee02b164f6728d3227c42671028c67a4afd36918__a1",
+      "outcome": "unresolved",
+      "patch_applied": false,
+      "tests_status_available": false,
+      "infra_failure": false,
+      "infra_failure_reason": null,
+      "harness_logged_patch_applied": true,
+      "eval_exception_category": "go_build_or_setup_failed"
+    },
+    {
+      "instance_id": "instance_flipt-io__flipt-f1bc91a1b999656dbdb2495ccb57bf2105b84920",
+      "repo": "flipt-io/flipt",
+      "artifact_dir": "mini_pro_retry_20260921_budget_v1/instances/mini_pro_retry_20260921_budget_v1__instance_flipt-io__flipt-f1bc91a1b999656dbdb2495ccb57bf2105b84920__a1",
+      "outcome": "unresolved",
+      "patch_applied": false,
+      "tests_status_available": false,
+      "infra_failure": false,
+      "infra_failure_reason": null,
+      "harness_logged_patch_applied": true,
+      "eval_exception_category": "go_build_or_setup_failed"
+    },
+    {
+      "instance_id": "instance_internetarchive__openlibrary-de6ae10512f1b5ef585c8341b451bc49c9fd4996-vfa6ff903cb27f336e17654595dd900fa943dcd91",
+      "repo": "internetarchive/openlibrary",
+      "artifact_dir": "mini_pro_retry_20260921_budget_v1/instances/mini_pro_retry_20260921_budget_v1__instance_internetarchive__openlibrary-de6ae10512f1b5ef585c8341b451bc49c9fd4996-vfa6ff903cb27f336e17654595dd900fa943dcd91__a1",
+      "outcome": "unresolved",
+      "patch_applied": false,
+      "tests_status_available": false,
+      "infra_failure": true,
+      "infra_failure_reason": "network_unreachable",
+      "harness_logged_patch_applied": true,
+      "eval_exception_category": "network_unreachable"
+    },
+    {
+      "instance_id": "instance_protonmail__webclients-cfd7571485186049c10c822f214d474f1edde8d1",
+      "repo": "protonmail/webclients",
+      "artifact_dir": "mini_pro_retry_20260921_budget_v1/instances/mini_pro_retry_20260921_budget_v1__instance_protonmail__webclients-cfd7571485186049c10c822f214d474f1edde8d1__a1",
+      "outcome": "unresolved",
+      "patch_applied": false,
+      "tests_status_available": false,
+      "infra_failure": false,
+      "infra_failure_reason": null,
+      "harness_logged_patch_applied": true,
+      "eval_exception_category": "no_parsed_test_results"
+    }
+  ]
+}

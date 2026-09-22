@@ -1,6 +1,7 @@
 """Opt-in Docker + installed DefaultAgent contract check, with mocked model replies.
 
-Run with GPTSwarm's Python; pass the mini interpreter as the only argument.
+Run with GPTSwarm's Python; pass the mini interpreter, optionally followed
+by a dataset JSON and instance ID (including Pro tasks).
 No real model requests are made. Only disposable gptswarm_mini_* containers
 are created; real shell commands verify the helper and handoff protocol.
 """
@@ -68,11 +69,11 @@ def child(request_path):
         assert 'assertions execute' in json.dumps(calls[0])
 
 
-async def parent(mini_python):
+async def parent(mini_python, data_path=None, instance_id='django__django-10999'):
     sys.path.insert(0, str(ROOT))
     from swarm.environment.agents.swe_bench.mini_runtime import MiniRuntime
-    records = json.loads((ROOT / 'outputs/swebench/swebench_verified_test_154.json').read_text())
-    record = next(r for r in records if r['instance_id'] == 'django__django-10999')
+    records = json.loads(Path(data_path or ROOT / 'outputs/swebench/swebench_verified_test_154.json').read_text())
+    record = next(r for r in records if r['instance_id'] == instance_id)
     config = json.loads((ROOT / 'config/swebench/mini_fixed.json').read_text())
     config['phases']['review']['seconds'] = 1  # advisory: actual calls must survive this target
     out = Path(tempfile.mkdtemp(prefix='swarm-mini-contract-'))
@@ -125,4 +126,4 @@ if __name__ == '__main__':
     if sys.argv[1] == '--worker-json':
         child(sys.argv[2])
     else:
-        asyncio.run(parent(sys.argv[1]))
+        asyncio.run(parent(*sys.argv[1:]))

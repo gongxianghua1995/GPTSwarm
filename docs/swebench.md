@@ -2,9 +2,13 @@
 
 本分支增加 GPTSwarm 的 SWE-bench 适配，以及基于 mini-swe-agent 的固定多角色执行器。当前正式入口是 `experiments.run_swebench_mini_swarm` 和 `experiments.run_swebench_mini_batch`。
 
+跨项目迁移先看 [SWE 实验跨框架适配指南：EvoMAS、MetaGPT 与 GPTSwarm](swe_cross_framework_migration_playbook.md)：包含架构比较、共用底座、踩坑排查、分阶段验收、批跑恢复和公平比较口径。
+
 ## 实验报告
 
 [2026-09-18 全量固定团队实验](experiments/mini_full_20260918/experiment_report.md)：本地 SWE-bench Verified 154 题子集，102 题解决（66.23%），整批 22.20 小时；已返回 API usage 合计 206,801,947 tokens。该结果不代表完整 Verified 测试集成绩，也不能替代同预算单 mini 对照实验。
+
+[2026-09-20 Pro 固定团队实验](experiments/mini_pro_20260920/experiment_report.md)：本地 Pro test 216 题，额度故障补跑合并后 100 题解决（46.30%），整个实验 33.91 小时；选中尝试 265,968,885 tokens，包含废弃和中断的全部尝试 271,466,895 tokens。报告包含分域结果、角色轨迹、确定性替换规则及 14 题无逐项测试结果的审计，其中 1 题为断网下的外部依赖访问失败。
 
 报告目录包含逐题/逐阶段 CSV、结构化汇总、统计输入 SHA-256 和图表；不包含任务数据、gold patch、原始模型消息、凭据或 Docker 日志。原始实验记录保留在运行机器的 `outputs/` 和 `logs/`，不进入 Git。
 
@@ -17,7 +21,7 @@
 - [早期轨迹复核](swebench_mini_trace_review_20260918.md)
 - [较早的原生执行器基线](swebench_native_baseline.md)
 
-`run_swebench.py`、`run_swebench_eval*.py`、`run_swebench_failed.py`、`run_swebench_repair.py` 及补丁修整脚本保留用于追溯较早实验；它们不代表当前固定 mini 团队的推荐流程。旧结果及镜像清单文档是当时快照，不能覆盖上面的正式报告。正式 mini 评估目前复用 `run_swebench_eval_repair.py` 中的镜像复用兼容钩子。
+`run_swebench.py`、`run_swebench_eval*.py`、`run_swebench_failed.py`、`run_swebench_repair.py` 及补丁修整脚本保留用于追溯较早实验；它们不代表当前固定 mini 团队的推荐流程。旧结果及镜像清单文档是当时快照，不能覆盖上面的正式报告。正式 mini 的 Verified 评估复用 `run_swebench_eval_repair.py` 中的镜像复用兼容钩子。
 
 ## 运行准备
 
@@ -60,6 +64,10 @@ nohup python -u outputs/swebench/my_batch/source/experiments/run_swebench_mini_b
 ```
 
 每个仓库域一个队列，域内逐题生成后立即官方评估。`status.json` 记录状态，`results.jsonl` 记录每题结果；原始轨迹和补丁位于 `instances/`。续跑同一冻结入口会跳过已结束任务，并保留未完成尝试。已有活动调度器时不要重复启动；文件锁及旧任务进程检测会拒绝重复运行。
+
+## SWE-bench Pro
+
+[Pro test 216 条的配置与适配](swebench_pro.md)。Pro 使用 `/app` 工作目录及独立的 swebench 5.x TestSpec/日志解析适配；不要使用 Verified 的评估入口。
 
 ## 检查与统计
 

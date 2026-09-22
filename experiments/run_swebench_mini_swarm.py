@@ -5,12 +5,14 @@ import hashlib
 import json
 import os
 import sys
+import subprocess
 from datetime import datetime, timezone
 from pathlib import Path
 
 from dotenv import load_dotenv
 from swarm.environment.agents.swe_bench.mini_collaboration import build_fixed_swarm
 from swarm.environment.agents.swe_bench.mini_runtime import MiniRuntime
+from swarm.environment.agents.swe_bench.mini_benchmark import is_pro
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -26,7 +28,9 @@ async def generate(record, config, out, mini_python):
                     mini_python=mini_python, roles=swarm.agent_names,
                     nodes=[dict(id=n.id, name=n.node_name) for n in graph.nodes.values()],
                     edges=[(n.id, s.id) for n in graph.nodes.values() for s in n.successors],
-                    inputs_policy='problem_statement_only; no hints, gold patches or evaluation test names')
+                    benchmark='swebench_pro' if is_pro(record) else 'swebench_verified',
+                    inputs_policy=('problem_statement, public requirements/interface' if is_pro(record)
+                                   else 'problem_statement_only') + '; no hints, gold patches or evaluation test names')
     sources = [Path(__file__), *Path(ROOT / 'swarm/environment/agents/swe_bench').glob('mini_*.py'),
                ROOT / 'swarm/graph/graph.py', ROOT / 'swarm/graph/node.py', ROOT / 'swarm/graph/swarm.py']
     manifest['source_hashes'] = {str(p.relative_to(ROOT)): hashlib.sha256(p.read_bytes()).hexdigest() for p in sources}
@@ -95,8 +99,16 @@ def main():
     print(f'Artifacts: {out}', flush=True)
     prediction = asyncio.run(generate(record, config, out, args.mini_python))
     if not args.skip_eval and prediction:
-        from experiments.swebench_mini_eval import evaluate
-        evaluate(args.data_path, out, prediction)
+        if is_pro(record):
+            # Pro uses the 5.x TestSpec API in the mini/eval Python environment.
+            with (out / 'evaluation.log').open('w') as log:
+                subprocess.run([args.mini_python, '-u', '-m', 'experiments.swebench_mini_pro_eval',
+                                '--data-path', args.data_path, '--output-dir', str(out),
+                                '--instance-id', record['instance_id']], cwd=ROOT,
+                               stdout=log, stderr=subprocess.STDOUT, check=True, timeout=2100)
+        else:
+            from experiments.swebench_mini_eval import evaluate
+            evaluate(args.data_path, out, prediction)
 
 
 if __name__ == '__main__':

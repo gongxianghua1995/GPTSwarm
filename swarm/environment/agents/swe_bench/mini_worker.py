@@ -51,7 +51,8 @@ def main(request_path):
 
         def shell(self, command, container=None):
             seconds = max(1, min(req['command_timeout'], int(deadline-time.monotonic())))
-            argv = ['docker', 'exec', '-w', req['cwd'], '-e', 'BASH_ENV=/root/.bashrc',
+            argv = ['docker', 'exec', '-w', req['cwd'],
+                    *[part for value in req.get('shell_env', ['BASH_ENV=/root/.bashrc']) for part in ['-e', value]],
                     container or req['container'], 'timeout', '-k', '2', str(seconds),
                     'bash', '-o', 'pipefail', '-c', command]
             try:

@@ -25,13 +25,13 @@ def check_evidence(command, result):
         words = shlex.split(command)
     except ValueError:
         words = []
-    test_like = any(w.rsplit('/', 1)[-1] in {'pytest', 'unittest', 'runtests.py', 'swe-check'} for w in words)
+    test_like = any(w.rsplit('/', 1)[-1] in {'pytest', 'unittest', 'runtests.py', 'swe-check', 'jest'} for w in words)
     test_like |= any(words[i:i+2] in [['go', 'test'], ['npm', 'test'], ['yarn', 'test'], ['django', 'test']]
                      for i in range(len(words)))
     if not test_like and rc == 0:
         return None  # Reading source containing "AssertionError" is not a failed test.
     status = 'unknown'
-    if re.search(r'no tests (?:to run|ran)|collected 0 items|Ran 0 tests|\[no test files\]', output, re.I):
+    if re.search(r'no tests (?:to run|ran|found)|collected 0 items|Ran 0 tests|\[no test files\]', output, re.I):
         status = 'no_tests'
     elif re.search(r'unittest\.loader\._FailedTest|unrecognized arguments:|ERROR: file or directory not found|No module named (?:pytest|test_sqlite)', output):
         status = 'invocation_error'

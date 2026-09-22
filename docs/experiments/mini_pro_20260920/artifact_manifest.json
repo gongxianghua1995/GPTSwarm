@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "description": "Derived report artifacts only; excludes this manifest itself.",
+  "files": {
+    "evaluation_exceptions.csv": {
+      "sha256": "509182e270e14d54402f3b0742348276144be535bd82a778b864ae010f52fcb4",
+      "bytes": 4431
+    },
+    "experiment_overview.pdf": {
+      "sha256": "49829464c76c50d10a10ec336b8426eb8a59f60903bd32e4c248abbaed1511fb",
+      "bytes": 32696
+    },
+    "experiment_overview.png": {
+      "sha256": "e21931bcb16b3bda1e86bcaa283e23b0d77c06f37b16e9f91af896b6d090da14",
+      "bytes": 384367
+    },
+    "experiment_overview.svg": {
+      "sha256": "d7a864e86a0ecf029340d253d0f1a8bee45b96adac274eee22390f44dec4b800",
+      "bytes": 184827
+    },
+    "experiment_report.md": {
+      "sha256": "19cfbb3ba89c0247a7f2bd87aa63d733e576a100914c6eb6d2e60fb8ed9b1e21",
+      "bytes": 17658
+    },
+    "per_attempt.csv": {
+      "sha256": "4f29b913847e200b4b6939b4a74acd5c0104c3e0ca53d1d258d6aeb8aaaad267",
+      "bytes": 230879
+    },
+    "per_attempt_phase.csv": {
+      "sha256": "a57ad868b158e8fa0665878cfb4e23afcb9d7986bb94d85d46b32d41779152b4",
+      "bytes": 488272
+    },
+    "per_phase.csv": {
+      "sha256": "04174993527f27a41c3c1fe98544ba1d8e7692f9bab0392eec33e2942f64b345",
+      "bytes": 342353
+    },
+    "per_task.csv": {
+      "sha256": "1f5e5d1e38b06db073d535755bc35205f5a21bd047468d11afa17bbb33da98cf",
+      "bytes": 164831
+    },
+    "plot_mini_pro_report.py": {
+      "sha256": "f28c1838950da33c3897fdd75536120063084a7025e84d719855d9372dcea3cd",
+      "bytes": 6317
+    },
+    "selection.csv": {
+      "sha256": "f41b1fb80620e413f0c4b94ef05d284d16163ddbe43d8b137b3af7c8f23020b0",
+      "bytes": 83866
+    },
+    "source_hashes.json": {
+      "sha256": "bb5fae39a095fd7206a133ecaf61b96e3e043e3c0790e9fca5fdff7ddc7b0ac4",
+      "bytes": 1373882
+    },
+    "summarize_mini_pro_report.py": {
+      "sha256": "579dfc87081244163728a2d06cf9a5a0b22106064c1c084284b03443ae7ca825",
+      "bytes": 47773
+    },
+    "summary.json": {
+      "sha256": "e604443ddc7321b539b9052c3ed392dc3c00be2e128ec745f9ae971a3616407d",
+      "bytes": 41306
+    }
+  }
+}

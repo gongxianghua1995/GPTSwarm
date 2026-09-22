@@ -1,0 +1,230 @@
+{
+  "captured_at": "2026-09-21T09:40:22.892793+00:00",
+  "scope": "Local source and historical evidence for swe_cross_framework_migration_playbook.md; no external benchmark ranking or final ongoing-Pro score claimed.",
+  "projects": [
+    {
+      "name": "EvoMAS",
+      "git_head": "3e1bd989f6a2c0e9131e02245ae79c5f2e2e8421",
+      "note": "Working-tree source hashes below are authoritative; git HEAD alone does not include local changes."
+    },
+    {
+      "name": "MetaGPT",
+      "git_head": "11cdf466d042aece04fc6cfd13b28e1a70341b1f",
+      "note": "Working-tree source hashes below are authoritative; git HEAD alone does not include local changes."
+    },
+    {
+      "name": "GPTSwarm",
+      "git_head": "da921dbd36a0d27c3eca3046137e078f5f115eb4",
+      "note": "Working-tree source hashes below are authoritative; git HEAD alone does not include local changes."
+    }
+  ],
+  "sources": [
+    {
+      "path": "EvoMAS/mas_pools/swebench/chatdev.yaml",
+      "sha256": "23802cff75fd98335bfa07780a9bd8c16057f35246723c214f433d7183ae86d4",
+      "bytes": 1256
+    },
+    {
+      "path": "EvoMAS/output_paper/SWE-bench Pro 断网实验报告.md",
+      "sha256": "182e033bc0dbd211b5975c9e6c817ac43e7eae8de5dffb6f532c945da5110e9f",
+      "bytes": 2550
+    },
+    {
+      "path": "EvoMAS/output_paper/SWE-bench 断网实验报告.md",
+      "sha256": "1483e6f849334d9e72933ac20e2728bdbf78a3d9bf69750d748a472fdb049ad7",
+      "bytes": 5969
+    },
+    {
+      "path": "EvoMAS/scripts/run_swebench_pro_eval.py",
+      "sha256": "ecd83800a918ba6eac4f98a43b8fc00fdc89faf394a0967215aed6df604b1561",
+      "bytes": 20466
+    },
+    {
+      "path": "EvoMAS/src/agents/runners/minisweagent.py",
+      "sha256": "00cfd73fbbf84fc5596bcf26135118530e8da4fd6223033d58455cfc6a16618f",
+      "bytes": 37385
+    },
+    {
+      "path": "EvoMAS/src/agents/runners/smolagents.py",
+      "sha256": "857c097cc7d178222c593271fe767c0f80147236d31a006ac28672ebf36efb21",
+      "bytes": 21146
+    },
+    {
+      "path": "EvoMAS/src/agents/spec.py",
+      "sha256": "c411e5cc58dbdbca66aefb4c83e4b5f575d9147a1d41dbd5eb12c3891ed825f5",
+      "bytes": 2731
+    },
+    {
+      "path": "EvoMAS/src/dataset/swe_bench.py",
+      "sha256": "30566e66ac21dd624c637924260aa3c01d0f4e26f320553863d9a8f6b32bae9f",
+      "bytes": 12956
+    },
+    {
+      "path": "EvoMAS/src/mas/runtime.py",
+      "sha256": "10307a7c45ff104ec618fd90d15effd8398e5e203891abb3391b6e9734c6e451",
+      "bytes": 40480
+    },
+    {
+      "path": "EvoMAS/src/utils/mas_runner.py",
+      "sha256": "d75134e2eb5ffdf75c3bab5a78b87c9520883ba7230bb900145b3198a4b68f04",
+      "bytes": 88456
+    },
+    {
+      "path": "GPTSwarm/docs/experiments/mini_full_20260918/experiment_report.md",
+      "sha256": "c4d63dd9f1438c10de742c4703cf9b32fa1cf8bf4118c38e89303f70e06f7d3a",
+      "bytes": 11875
+    },
+    {
+      "path": "GPTSwarm/docs/swebench_migration_audit_20260918.md",
+      "sha256": "500e9bc582164082da77895233d7ad57823804dfe08456842b274b0ac6733cc0",
+      "bytes": 10976
+    },
+    {
+      "path": "GPTSwarm/docs/swebench_mini_trace_review_20260918.md",
+      "sha256": "bda509e486c9190a8cfe7f2db946d89c62a8747e9c937b56a738decf82d3cf6b",
+      "bytes": 7571
+    },
+    {
+      "path": "GPTSwarm/docs/swebench_pro.md",
+      "sha256": "65f923f4e768cbc2965594eb1e5d4887e914496ff29b76f4b8996bd29911011a",
+      "bytes": 7088
+    },
+    {
+      "path": "GPTSwarm/experiments/run_swebench_mini_batch.py",
+      "sha256": "bd0d74d69e1528c9a672972665b4278856318b06ee8950085248c73d7947b29a",
+      "bytes": 16281
+    },
+    {
+      "path": "GPTSwarm/experiments/swebench_mini_pro_eval.py",
+      "sha256": "3956774093e9322a8167d1a8b701c3643ffd471ef6a9e226261ff3bb174d1040",
+      "bytes": 3995
+    },
+    {
+      "path": "GPTSwarm/experiments/swebench_pro_spec.py",
+      "sha256": "d51674070efc14b80711be0f4968db56c8614e11a0c9bbe78d95d6818e4fc3ac",
+      "bytes": 10682
+    },
+    {
+      "path": "GPTSwarm/swarm/environment/agents/swe_bench/mini_benchmark.py",
+      "sha256": "c598803a115c626b4c4de683825ae0f8d8c6d0c6ecb06159be65731c4f1c8fb7",
+      "bytes": 1223
+    },
+    {
+      "path": "GPTSwarm/swarm/environment/agents/swe_bench/mini_checks.py",
+      "sha256": "b9222af569f3b778c0cebc3192f554e95b858061eeef660189483c34c1a2aafa",
+      "bytes": 3649
+    },
+    {
+      "path": "GPTSwarm/swarm/environment/agents/swe_bench/mini_collaboration.py",
+      "sha256": "cd587f19ee4f4aa50f6ddca5bf590a25882cda30b192b2ac310bc39c13edfe7c",
+      "bytes": 5483
+    },
+    {
+      "path": "GPTSwarm/swarm/environment/agents/swe_bench/mini_protocol.py",
+      "sha256": "0d0aabf2345c0a9d50cfcf8181e21da6f392e6e5cea78df50dc70ba04a01c6b9",
+      "bytes": 4716
+    },
+    {
+      "path": "GPTSwarm/swarm/environment/agents/swe_bench/mini_repository.py",
+      "sha256": "3fa6ef2545ea456af4bfa85ebe26e47ebb68087ba9134c400d665060b8cd71c7",
+      "bytes": 2274
+    },
+    {
+      "path": "GPTSwarm/swarm/environment/agents/swe_bench/mini_runtime.py",
+      "sha256": "38805f85fccc8ab804364b9174d561f60d9a7b94e0c4814b17684bff8f8ff0a6",
+      "bytes": 20525
+    },
+    {
+      "path": "GPTSwarm/swarm/environment/agents/swe_bench/mini_worker.py",
+      "sha256": "25760559eaa89bd148fbee3bf145ec3865636207ac90cc639b22b4b5164c34ab",
+      "bytes": 15096
+    },
+    {
+      "path": "GPTSwarm/test/smoke_mini_worker_contract.py",
+      "sha256": "73b54c3dd5e66e733643e1e10756cd81f24de1eb95e51ab06dce0133f559baa0",
+      "bytes": 6804
+    },
+    {
+      "path": "GPTSwarm/test/test_swebench_mini_batch.py",
+      "sha256": "ca291e38480be6c59b02cb2e16efcc110140e45e574dede60e0b9cfedc534311",
+      "bytes": 4557
+    },
+    {
+      "path": "MetaGPT/docs/SWE_agent_migration_playbook.md",
+      "sha256": "21de2d0434bd97259a3883290a0f41e61e2ac479161fa6c2f2cd619e8b8ab1ef",
+      "bytes": 22628
+    },
+    {
+      "path": "MetaGPT/docs/SWE_mini_backend_migration.md",
+      "sha256": "c8b2c7f66d50bf88fa776681060f07508c750f1b2333fade7f601f0c82ca99fb",
+      "bytes": 15118
+    },
+    {
+      "path": "MetaGPT/metagpt/roles/di/swe_budget.py",
+      "sha256": "8422577b3ef1e5b91d592feb7616dbe99649821749cbd55ddfa537e4f9030a32",
+      "bytes": 2863
+    },
+    {
+      "path": "MetaGPT/metagpt/roles/di/swe_mini_engineer.py",
+      "sha256": "3987b35223a74d9c2a2803286bcfe14c27f505e82c825ead2b151ea655cad129",
+      "bytes": 4640
+    },
+    {
+      "path": "MetaGPT/metagpt/roles/di/swe_protocol.py",
+      "sha256": "daf1eceae70347a3c0a1e224fbd2d8a246c9c32a825a8fea362c53553d5ebb00",
+      "bytes": 25535
+    },
+    {
+      "path": "MetaGPT/metagpt/roles/di/swe_repository.py",
+      "sha256": "916105404f11edbda069b44cabd17c5484862adc9c32b8ec2782659b16c47494",
+      "bytes": 2168
+    },
+    {
+      "path": "MetaGPT/metagpt/roles/di/swe_shell.py",
+      "sha256": "51d237046eaef81546548e3c9cce406bf704170eef7be97af71b2f40f9883631",
+      "bytes": 319
+    },
+    {
+      "path": "MetaGPT/metagpt/tools/libs/docker_bash.py",
+      "sha256": "172e31fb5ecb88bbe4659b26bcdf36f415f12eca2202ae01436ec99f5b0eb71a",
+      "bytes": 10519
+    },
+    {
+      "path": "MetaGPT/tests/metagpt/roles/di/run_swe_full_experiment.py",
+      "sha256": "ac97fb62d23d3db2dc72c9de46a43df0a5c363e21c730718ce6f1a9fa30d3b83",
+      "bytes": 12572
+    },
+    {
+      "path": "MetaGPT/tests/metagpt/roles/di/run_swebench_pro_eval.py",
+      "sha256": "822a2d828d1306c09cb8773041e22d924a785e9710b384c80598dc676cf209d9",
+      "bytes": 21552
+    }
+  ],
+  "local_run_evidence": [
+    {
+      "path": "GPTSwarm/outputs/swebench/mini_pro_full_20260920_domains_v2/manifest.json",
+      "sha256": "835486a9df56daa1c795c156a7e8a63fb432508c59548ac98745b4a5097f8696",
+      "note": "Local ignored experiment artifact; not bundled with this document."
+    },
+    {
+      "path": "GPTSwarm/outputs/swebench/mini_pro_full_20260920_domains_v2/api_budget_audit_20260921.json",
+      "sha256": "624fbbbb2ce43d863c5f14a867b314975c26de52b91ebff9a1697327f692c0ee",
+      "note": "Local ignored experiment artifact; not bundled with this document."
+    },
+    {
+      "path": "GPTSwarm/outputs/swebench/mini_pro_retry_20260921_budget_v1/manifest.json",
+      "sha256": "2e29b84883c5b0f92f22b976c034bde3263867c6f6ad1726efe6e8dc1eb71dd4",
+      "note": "Local ignored experiment artifact; not bundled with this document."
+    },
+    {
+      "path": "GPTSwarm/outputs/swebench/mini_pro_retry_20260921_budget_v1/selection.json",
+      "sha256": "624fbbbb2ce43d863c5f14a867b314975c26de52b91ebff9a1697327f692c0ee",
+      "note": "Local ignored experiment artifact; not bundled with this document."
+    },
+    {
+      "path": "GPTSwarm/outputs/swebench/mini_pro_retry_20260921_budget_v1/resume_audit.jsonl",
+      "sha256": "a783f25e523ee37cb6d88f89b712baed15155376bee2684f911464bdd40bced6",
+      "note": "Local ignored experiment artifact; not bundled with this document."
+    }
+  ]
+}
