@@ -1,0 +1,1080 @@
+[
+  {
+    "instance_id": "django__django-10999",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__django__django-10999__a1",
+    "outcome": "unresolved",
+    "patch_sha256": "15f84b3269f4d5fde7e51b5c515197685cde56e42927cba5152c9ff8c71aba38",
+    "patch_bytes": 491
+  },
+  {
+    "instance_id": "django__django-11087",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__django__django-11087__a1",
+    "outcome": "unresolved",
+    "patch_sha256": "361d94854132c69a0a1a2089f48a41d2bad2fb864f403c96822bc1e0792bef1a",
+    "patch_bytes": 1268
+  },
+  {
+    "instance_id": "django__django-11138",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__django__django-11138__a1",
+    "outcome": "resolved",
+    "patch_sha256": "56d7ffa9fe18c1040ac5103fb378b33a48131b11cad273ef20e72e47e137357c",
+    "patch_bytes": 7862
+  },
+  {
+    "instance_id": "django__django-11141",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__django__django-11141__a1",
+    "outcome": "unresolved",
+    "patch_sha256": "350b05354347b783c1ba0aff6748f688e10539ba9add0620ea580c45a815a6ee",
+    "patch_bytes": 771
+  },
+  {
+    "instance_id": "django__django-11149",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__django__django-11149__a1",
+    "outcome": "resolved",
+    "patch_sha256": "eedf24f651e4494386bdfbfa0e92261cedd3c0d27b43096e555425ea4ac2bd44",
+    "patch_bytes": 3863
+  },
+  {
+    "instance_id": "django__django-11206",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__django__django-11206__a1",
+    "outcome": "resolved",
+    "patch_sha256": "959c219ffdaea39f1b64af5fc3ed44ae51ae8ae242bcbf3667bacfed7f159df3",
+    "patch_bytes": 1079
+  },
+  {
+    "instance_id": "django__django-11239",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__django__django-11239__a1",
+    "outcome": "resolved",
+    "patch_sha256": "1ae8a64f7d3d62221c647d166d540254e344bb3a7827ba09ba5f5b4298274350",
+    "patch_bytes": 840
+  },
+  {
+    "instance_id": "django__django-11265",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__django__django-11265__a1",
+    "outcome": "unresolved",
+    "patch_sha256": "3f8b1025c7bc5af77f91218fbef35051e10e5f58b3a31dab9af03a412bc0fab3",
+    "patch_bytes": 592
+  },
+  {
+    "instance_id": "django__django-11292",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__django__django-11292__a1",
+    "outcome": "resolved",
+    "patch_sha256": "73647d7a2454e873cfe94eabea9eef96ee5b683f829300ddf67329590852066c",
+    "patch_bytes": 1042
+  },
+  {
+    "instance_id": "django__django-11400",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__django__django-11400__a1",
+    "outcome": "unresolved",
+    "patch_sha256": "eb7f5094df0f25fe03da8aa222cd557d25af142671037f2e79ec0d010af80b06",
+    "patch_bytes": 1490
+  },
+  {
+    "instance_id": "django__django-11477",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__django__django-11477__a1",
+    "outcome": "unresolved",
+    "patch_sha256": "5c9141bcb9557129da6fbef66b2775ad22858091cc2400616194a1b9b674ab20",
+    "patch_bytes": 645
+  },
+  {
+    "instance_id": "django__django-11490",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__django__django-11490__a1",
+    "outcome": "resolved",
+    "patch_sha256": "cfd0c575137447766f64fe2ef2a15a6fe96acada9a8d6fb1b32c3b309822fc16",
+    "patch_bytes": 677
+  },
+  {
+    "instance_id": "django__django-11532",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__django__django-11532__a1",
+    "outcome": "unresolved",
+    "patch_sha256": "b16db4ba9155fec7849e3ffe42c7bf6d8981070bcc62a198760ee16973e15d8e",
+    "patch_bytes": 861
+  },
+  {
+    "instance_id": "django__django-11555",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__django__django-11555__a1",
+    "outcome": "resolved",
+    "patch_sha256": "ef3857ee978172d26c4450423bfa3ef5bd8f33edb67f699e2ca684c0878840b8",
+    "patch_bytes": 1197
+  },
+  {
+    "instance_id": "django__django-11734",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__django__django-11734__a1",
+    "outcome": "resolved",
+    "patch_sha256": "8e7137e0ec7e5db3a15a2a190b520763f3555ffb1c56e61aceb2b7d7f19d1442",
+    "patch_bytes": 2823
+  },
+  {
+    "instance_id": "django__django-11820",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__django__django-11820__a1",
+    "outcome": "unresolved",
+    "patch_sha256": "4dac0a60e360c566ce73d6600106347210233df9b2cb2f8001a59cec187e1526",
+    "patch_bytes": 923
+  },
+  {
+    "instance_id": "django__django-11848",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__django__django-11848__a1",
+    "outcome": "resolved",
+    "patch_sha256": "dbf2b4e03a5664878a783cfb6a6a16b41efdeee1ca2a00068f31f91883b51360",
+    "patch_bytes": 677
+  },
+  {
+    "instance_id": "django__django-11885",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__django__django-11885__a1",
+    "outcome": "resolved",
+    "patch_sha256": "2cc64059329a332bd41325547d1237c4825bcd8b227e8bdd4c454bd90cd980cf",
+    "patch_bytes": 3033
+  },
+  {
+    "instance_id": "django__django-11964",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__django__django-11964__a1",
+    "outcome": "resolved",
+    "patch_sha256": "02dca38d6c4781c87933d15f958b59579e16d03784b09ccbd436ef45fdee5f61",
+    "patch_bytes": 636
+  },
+  {
+    "instance_id": "django__django-12039",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__django__django-12039__a1",
+    "outcome": "resolved",
+    "patch_sha256": "057363bd5e15ba347a3fb3cab797fd9e35a419767f9853d936a974c0d49e2afb",
+    "patch_bytes": 1112
+  },
+  {
+    "instance_id": "django__django-12125",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__django__django-12125__a1",
+    "outcome": "resolved",
+    "patch_sha256": "43bf1935b608add66d896a83d2776b4219c75d5e7ef992d254e8f79d876b0458",
+    "patch_bytes": 1944
+  },
+  {
+    "instance_id": "django__django-12209",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__django__django-12209__a1",
+    "outcome": "resolved",
+    "patch_sha256": "f597df4c926f3395247f247a22c76d13373e3294b18992567a5aee25b11cd5b5",
+    "patch_bytes": 3869
+  },
+  {
+    "instance_id": "django__django-12273",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__django__django-12273__a1",
+    "outcome": "resolved",
+    "patch_sha256": "edd1b23e9324da036b0dd53ba2b61d4ddf9bc3fbd3bd5fd2f387885bce2cc81e",
+    "patch_bytes": 2020
+  },
+  {
+    "instance_id": "django__django-12325",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__django__django-12325__a1",
+    "outcome": "unresolved",
+    "patch_sha256": "9dc5af267b4c3d74123ac84c596e902b2844820e02c4724ab8ebd862794496c3",
+    "patch_bytes": 754
+  },
+  {
+    "instance_id": "django__django-12406",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__django__django-12406__a1",
+    "outcome": "unresolved",
+    "patch_sha256": "060fae9bf4e98dd218a022e458b5cfcd47a033c07c73d4eb05d14ce256581326",
+    "patch_bytes": 1341
+  },
+  {
+    "instance_id": "django__django-12663",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__django__django-12663__a1",
+    "outcome": "resolved",
+    "patch_sha256": "c6ab19c64f084171cc319a0217c2102c9bc075f0320849f26a83021a11e5a537",
+    "patch_bytes": 1740
+  },
+  {
+    "instance_id": "django__django-12708",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__django__django-12708__a1",
+    "outcome": "resolved",
+    "patch_sha256": "b0a6e34a0c95bf1092d7949eb44d0dd68de83d684e8939c6fcc16bf3df4dcbc6",
+    "patch_bytes": 748
+  },
+  {
+    "instance_id": "django__django-12754",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__django__django-12754__a1",
+    "outcome": "resolved",
+    "patch_sha256": "74b33c3935fcc27e0de54a520d97dbe85953e78d7435886b934cbea58c5b6601",
+    "patch_bytes": 1271
+  },
+  {
+    "instance_id": "django__django-13012",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__django__django-13012__a1",
+    "outcome": "resolved",
+    "patch_sha256": "0b9ee4c4b31498cd440bc74acda704c2704223b129c94d8cafcc854ad72c8368",
+    "patch_bytes": 556
+  },
+  {
+    "instance_id": "django__django-13023",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__django__django-13023__a1",
+    "outcome": "resolved",
+    "patch_sha256": "797044f87608117e8cdaf5e6666b553c93bfff710a3a9e1d2fcae9c1cee87cfd",
+    "patch_bytes": 611
+  },
+  {
+    "instance_id": "django__django-13112",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__django__django-13112__a1",
+    "outcome": "resolved",
+    "patch_sha256": "c08be0101b70409560b03412863de58a32d621b3c79ec585a40fbcc43b155c9f",
+    "patch_bytes": 926
+  },
+  {
+    "instance_id": "django__django-13121",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__django__django-13121__a1",
+    "outcome": "resolved",
+    "patch_sha256": "d05114f7682b622a20c2a327fcafec9df131c84ea3e2cc8b97c8aa2e5ca27657",
+    "patch_bytes": 538
+  },
+  {
+    "instance_id": "django__django-13128",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__django__django-13128__a1",
+    "outcome": "resolved",
+    "patch_sha256": "00b4cfe8d73cc510bd8cb3a5e4fda81165fc04c71c47ede8e2ca6244cfc36ba9",
+    "patch_bytes": 1099
+  },
+  {
+    "instance_id": "django__django-13158",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__django__django-13158__a1",
+    "outcome": "resolved",
+    "patch_sha256": "da8017f916eeefb9986551da17f42ff020766f69513350efffcb5a28d2fc44cb",
+    "patch_bytes": 734
+  },
+  {
+    "instance_id": "django__django-13297",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__django__django-13297__a1",
+    "outcome": "resolved",
+    "patch_sha256": "e91e0a2e88d37a832cc1167b780c735149c8383f197f67ed8aecf9a707de134b",
+    "patch_bytes": 2165
+  },
+  {
+    "instance_id": "django__django-13315",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__django__django-13315__a1",
+    "outcome": "resolved",
+    "patch_sha256": "d17a8523ad128ee2516b06b1b6b46d60aa3510dcdd40eb2c9ef9eecd61d6e498",
+    "patch_bytes": 668
+  },
+  {
+    "instance_id": "django__django-13344",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__django__django-13344__a1",
+    "outcome": "unresolved",
+    "patch_sha256": "b9ec0858e241244957456af8fbf0b4009ea50cdfc9f2f2a8b3e7adebbc3ba81e",
+    "patch_bytes": 1633
+  },
+  {
+    "instance_id": "django__django-13449",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__django__django-13449__a1",
+    "outcome": "resolved",
+    "patch_sha256": "9d6e7e6ca2f59047c4ef77251350066aae676984eeca67ae7b6f58f766ce9394",
+    "patch_bytes": 1798
+  },
+  {
+    "instance_id": "django__django-13568",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__django__django-13568__a1",
+    "outcome": "resolved",
+    "patch_sha256": "2706e9e421cbec216c866fd20315ef4bc411c54a4428186ccd822605a6a1aac3",
+    "patch_bytes": 736
+  },
+  {
+    "instance_id": "django__django-13590",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__django__django-13590__a1",
+    "outcome": "resolved",
+    "patch_sha256": "d227b53ff3080da20d8d92d78c740c5160a4852948d7c2187d6c9f57272a0274",
+    "patch_bytes": 833
+  },
+  {
+    "instance_id": "django__django-13794",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__django__django-13794__a1",
+    "outcome": "unresolved",
+    "patch_sha256": "cae290eef331de3fed4396884044830208ef454f24d4fcb6fdd2ab441f8a317b",
+    "patch_bytes": 852
+  },
+  {
+    "instance_id": "django__django-13807",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__django__django-13807__a1",
+    "outcome": "unresolved",
+    "patch_sha256": "9598b044c5c95eeb20bfc3b52940a116d6a6c94ea939c32328055a651fcf320a",
+    "patch_bytes": 1788
+  },
+  {
+    "instance_id": "django__django-13810",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__django__django-13810__a1",
+    "outcome": "resolved",
+    "patch_sha256": "51d98e38b108569b6245783126a1ee2736ecbec7ce4b6385cf593097e9d3e317",
+    "patch_bytes": 842
+  },
+  {
+    "instance_id": "django__django-13821",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__django__django-13821__a1",
+    "outcome": "resolved",
+    "patch_sha256": "1893f519b2d8e5dbf14d1c04ae1bddae5d45c952c720e750895b38b615292a08",
+    "patch_bytes": 2562
+  },
+  {
+    "instance_id": "django__django-13925",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__django__django-13925__a1",
+    "outcome": "resolved",
+    "patch_sha256": "118e33d917631e1defbb09e4c66982fd9099859e46ba4d3c165f4f47d3af11c6",
+    "patch_bytes": 598
+  },
+  {
+    "instance_id": "django__django-14007",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__django__django-14007__a1",
+    "outcome": "resolved",
+    "patch_sha256": "0529441b4849cddecc0a218e6a905dbde71b5bea1b7c2bd234e94d2dc1889327",
+    "patch_bytes": 1643
+  },
+  {
+    "instance_id": "django__django-14011",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__django__django-14011__a1",
+    "outcome": "unresolved",
+    "patch_sha256": "bac07de7bccc93f6fbe7c437785e0fab75fb58278b56840897c75537487c6975",
+    "patch_bytes": 3054
+  },
+  {
+    "instance_id": "django__django-14017",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__django__django-14017__a1",
+    "outcome": "resolved",
+    "patch_sha256": "c0df363f8b0fd604a6d6eaa5ee0edd30f19b92e5decb5ba554753000a9e8d888",
+    "patch_bytes": 1219
+  },
+  {
+    "instance_id": "django__django-14034",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__django__django-14034__a1",
+    "outcome": "unresolved",
+    "patch_sha256": "f3cfbc8742f5eca819f71ebdec4b1f12394522b74a98669ea1117d374d7d295f",
+    "patch_bytes": 1105
+  },
+  {
+    "instance_id": "django__django-14053",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__django__django-14053__a1",
+    "outcome": "resolved",
+    "patch_sha256": "62c47f659dc5dbb0a70dac5415420d53eadfaf541b3e90a59e268da83ba7ef82",
+    "patch_bytes": 1765
+  },
+  {
+    "instance_id": "django__django-14122",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__django__django-14122__a1",
+    "outcome": "resolved",
+    "patch_sha256": "70a1361b7e3dc45e57fbee36531592b11b6fbe077cc808c39f585d9fb3ff3186",
+    "patch_bytes": 690
+  },
+  {
+    "instance_id": "django__django-14155",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__django__django-14155__a1",
+    "outcome": "unresolved",
+    "patch_sha256": "0043cb14344277d433f938b06a14aeee9a4c6692bfd95147a9443fbf7e574094",
+    "patch_bytes": 29925
+  },
+  {
+    "instance_id": "django__django-14170",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__django__django-14170__a1",
+    "outcome": "unresolved",
+    "patch_sha256": "38464ceebddfceeec8d5c489642659df700f2e51d095ebd576cc074c81a7cc60",
+    "patch_bytes": 686
+  },
+  {
+    "instance_id": "django__django-14351",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__django__django-14351__a1",
+    "outcome": "resolved",
+    "patch_sha256": "cc82ce4fd5a4544a71f2674ba681810262702ed0ed71befe2b30d63ccab32c63",
+    "patch_bytes": 457
+  },
+  {
+    "instance_id": "django__django-14434",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__django__django-14434__a1",
+    "outcome": "resolved",
+    "patch_sha256": "af97b4782ab9efc4815a1a40a1ef8b00ae8f8358e0aaa9e042f4e689269f5c6b",
+    "patch_bytes": 674
+  },
+  {
+    "instance_id": "django__django-14500",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__django__django-14500__a1",
+    "outcome": "resolved",
+    "patch_sha256": "35ec0d8469c02a045e63191af8a2fda41ba810a0d7b64da9d4dadbe424bb59ca",
+    "patch_bytes": 591
+  },
+  {
+    "instance_id": "django__django-14539",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__django__django-14539__a1",
+    "outcome": "resolved",
+    "patch_sha256": "d041d88eda7a0155fcd6dca9aba78ec0f7b12d6fa2d7ccdf0dcde85f3759bfa6",
+    "patch_bytes": 805
+  },
+  {
+    "instance_id": "django__django-14725",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__django__django-14725__a1",
+    "outcome": "resolved",
+    "patch_sha256": "8b97061b0c8e1151b846d61194954041c403422dfcdae53e31cd5d803d5f838d",
+    "patch_bytes": 5374
+  },
+  {
+    "instance_id": "django__django-14771",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__django__django-14771__a1",
+    "outcome": "resolved",
+    "patch_sha256": "2860ced96d756631082326cfaa7c1b8bae98e8e756dce7ba18d13a7983f94cf3",
+    "patch_bytes": 705
+  },
+  {
+    "instance_id": "matplotlib__matplotlib-21568",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__matplotlib__matplotlib-21568__a1",
+    "outcome": "unresolved",
+    "patch_sha256": "b2b017b2800f372fc3055654f319961af1ec662715ae9561195edb3fc5693742",
+    "patch_bytes": 699
+  },
+  {
+    "instance_id": "matplotlib__matplotlib-22719",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__matplotlib__matplotlib-22719__a1",
+    "outcome": "resolved",
+    "patch_sha256": "86290c3ab5daf0690b4e65a70295ea773f3837a1d99c9778ec88c0f6a0b8b9b0",
+    "patch_bytes": 929
+  },
+  {
+    "instance_id": "matplotlib__matplotlib-22865",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__matplotlib__matplotlib-22865__a1",
+    "outcome": "resolved",
+    "patch_sha256": "0ca63ec946460fbc02f452de96c13e01428c18993ab3898e81f6a52b65d4e7c5",
+    "patch_bytes": 738
+  },
+  {
+    "instance_id": "matplotlib__matplotlib-22871",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__matplotlib__matplotlib-22871__a1",
+    "outcome": "resolved",
+    "patch_sha256": "a1fc10f22b3d51578672b4d0457e503c3ae84d0eb0cd6f86459d107be5b653f1",
+    "patch_bytes": 1043
+  },
+  {
+    "instance_id": "matplotlib__matplotlib-23299",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__matplotlib__matplotlib-23299__a1",
+    "outcome": "unresolved",
+    "patch_sha256": "7ced86c57459ba9e26fb5517c5c36f247fad77a8b54a6af612702f64c4015f65",
+    "patch_bytes": 555
+  },
+  {
+    "instance_id": "matplotlib__matplotlib-23314",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__matplotlib__matplotlib-23314__a1",
+    "outcome": "resolved",
+    "patch_sha256": "db859daec2368328ceead4582c9d319658c00e4628c5e15b1b9f0acb377f694a",
+    "patch_bytes": 432
+  },
+  {
+    "instance_id": "matplotlib__matplotlib-23412",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__matplotlib__matplotlib-23412__a1",
+    "outcome": "resolved",
+    "patch_sha256": "ab922358347e5bf45274632b4ca2094d405356a6fe1e75be8c1c0594b9b47cf4",
+    "patch_bytes": 739
+  },
+  {
+    "instance_id": "matplotlib__matplotlib-23476",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__matplotlib__matplotlib-23476__a1",
+    "outcome": "unresolved",
+    "patch_sha256": "44a6c736b0f7289efb84853d07a001b6d0be442fc6da9cb709d7649a25e58a05",
+    "patch_bytes": 632
+  },
+  {
+    "instance_id": "matplotlib__matplotlib-24026",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__matplotlib__matplotlib-24026__a1",
+    "outcome": "resolved",
+    "patch_sha256": "60228c84880052b9091bd5acaa6f944907ec8f39b8e1d9c2e841b6be6437c11f",
+    "patch_bytes": 1655
+  },
+  {
+    "instance_id": "matplotlib__matplotlib-24149",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__matplotlib__matplotlib-24149__a1",
+    "outcome": "resolved",
+    "patch_sha256": "bb0bd218ccbbf9f94c735ecbd71515d4234b15eeb90fb7486f4170dd2baa12e0",
+    "patch_bytes": 725
+  },
+  {
+    "instance_id": "matplotlib__matplotlib-24570",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__matplotlib__matplotlib-24570__a1",
+    "outcome": "unresolved",
+    "patch_sha256": "9b2774b1d26c2e58a870763b4c7b8e5043768a5711afbd7c56920aa0357eae2c",
+    "patch_bytes": 1200
+  },
+  {
+    "instance_id": "matplotlib__matplotlib-24627",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__matplotlib__matplotlib-24627__a1",
+    "outcome": "resolved",
+    "patch_sha256": "24a06ca5ee21e7063aed0b385a052d9bf9d8f851e6481f2411ea1e07b1809eed",
+    "patch_bytes": 1396
+  },
+  {
+    "instance_id": "matplotlib__matplotlib-24637",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__matplotlib__matplotlib-24637__a1",
+    "outcome": "resolved",
+    "patch_sha256": "e4c7c5d84738ff7a25c8b9b958cdd6614c48353ebed12451d4fb75967f84d2e9",
+    "patch_bytes": 844
+  },
+  {
+    "instance_id": "matplotlib__matplotlib-24870",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__matplotlib__matplotlib-24870__a1",
+    "outcome": "unresolved",
+    "patch_sha256": "a4ae6f41bfbcc1e32ee75f491b17b51c6258c307c26bfda21edd38f11cafdfc1",
+    "patch_bytes": 1315
+  },
+  {
+    "instance_id": "matplotlib__matplotlib-25122",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__matplotlib__matplotlib-25122__a1",
+    "outcome": "resolved",
+    "patch_sha256": "7a33636dee5568905807580df70dd7e7fbcf5169e248034a613f0a846656b4b2",
+    "patch_bytes": 1330
+  },
+  {
+    "instance_id": "matplotlib__matplotlib-25311",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__matplotlib__matplotlib-25311__a1",
+    "outcome": "resolved",
+    "patch_sha256": "ebde4f3ab3cb7faf8aef259f536c2bcab1f19562f4490a506305ae4e172c500b",
+    "patch_bytes": 2822
+  },
+  {
+    "instance_id": "matplotlib__matplotlib-25332",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__matplotlib__matplotlib-25332__a1",
+    "outcome": "resolved",
+    "patch_sha256": "92f604223eebd857afc069bc911023878b7e51aecb1dee783a00e9a4f415f1a0",
+    "patch_bytes": 1692
+  },
+  {
+    "instance_id": "matplotlib__matplotlib-25775",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__matplotlib__matplotlib-25775__a1",
+    "outcome": "resolved",
+    "patch_sha256": "df7231dca7afb5c0b576dd32312adf4f146a383dbe90bfbc0126fc9cbeb6d0a2",
+    "patch_bytes": 6935
+  },
+  {
+    "instance_id": "matplotlib__matplotlib-25960",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__matplotlib__matplotlib-25960__a1",
+    "outcome": "resolved",
+    "patch_sha256": "1a463e8c345dc636da55a94bcc67b15fcb2bf49eb5cfa57007e174b35fb7e895",
+    "patch_bytes": 3021
+  },
+  {
+    "instance_id": "matplotlib__matplotlib-26113",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__matplotlib__matplotlib-26113__a1",
+    "outcome": "resolved",
+    "patch_sha256": "0070a7bee7707a07393e06ccf476be5da62e9dd960532652a102ee2b3d66993c",
+    "patch_bytes": 1019
+  },
+  {
+    "instance_id": "matplotlib__matplotlib-26208",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__matplotlib__matplotlib-26208__a1",
+    "outcome": "unresolved",
+    "patch_sha256": "50e4306148298c0254bd15c29f4c2f24a84058a627db51775414a9ee11b041fd",
+    "patch_bytes": 2023
+  },
+  {
+    "instance_id": "matplotlib__matplotlib-26291",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__matplotlib__matplotlib-26291__a1",
+    "outcome": "resolved",
+    "patch_sha256": "e2dd15349c6b1b3524d59113c8d63e8937eacfad75f919d5f8571cf1362e6a6f",
+    "patch_bytes": 643
+  },
+  {
+    "instance_id": "matplotlib__matplotlib-26466",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__matplotlib__matplotlib-26466__a1",
+    "outcome": "unresolved",
+    "patch_sha256": "e2eca5cbaf18048a61137419c48aa284661c674ddda42a6ad9293ba9862118a5",
+    "patch_bytes": 574
+  },
+  {
+    "instance_id": "sphinx-doc__sphinx-10466",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__sphinx-doc__sphinx-10466__a1",
+    "outcome": "resolved",
+    "patch_sha256": "9a032fc9c74d78a3ab9802f1bb24533c78c7035dc05b0af3df78520ce0205a1a",
+    "patch_bytes": 657
+  },
+  {
+    "instance_id": "sphinx-doc__sphinx-10614",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__sphinx-doc__sphinx-10614__a1",
+    "outcome": "unresolved",
+    "patch_sha256": "d488b3b9707b3846b6d2d37b64d186d333a09a181b62901d4b2e0bf9cb4110d3",
+    "patch_bytes": 1568
+  },
+  {
+    "instance_id": "sphinx-doc__sphinx-10673",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__sphinx-doc__sphinx-10673__a1",
+    "outcome": "unresolved",
+    "patch_sha256": "50f641d007bf1fd821d643c30839af7d85fd1a9f2b05d71be0bf013ad84d7f45",
+    "patch_bytes": 3206
+  },
+  {
+    "instance_id": "sphinx-doc__sphinx-11445",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__sphinx-doc__sphinx-11445__a1",
+    "outcome": "resolved",
+    "patch_sha256": "97866edf6e7953cf5e64032b39101ca965b179e9394c5899b9d63499fb89f3d7",
+    "patch_bytes": 414
+  },
+  {
+    "instance_id": "sphinx-doc__sphinx-11510",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__sphinx-doc__sphinx-11510__a1",
+    "outcome": "unresolved",
+    "patch_sha256": "46d39ad04d588acda689de525dc4a2a57a708d6ad609471b9c2e307075f0242d",
+    "patch_bytes": 8611
+  },
+  {
+    "instance_id": "sphinx-doc__sphinx-7440",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__sphinx-doc__sphinx-7440__a1",
+    "outcome": "resolved",
+    "patch_sha256": "cffc8d57eb1de6d569e5897983c21c3d6bf0c06738c68308dd3b129100dd2f27",
+    "patch_bytes": 1431
+  },
+  {
+    "instance_id": "sphinx-doc__sphinx-7590",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__sphinx-doc__sphinx-7590__a1",
+    "outcome": "unresolved",
+    "patch_sha256": "994610a85874d420103b9420cb8be0a2a63c5b70367ab71dc4e9dfd5aaacbeaf",
+    "patch_bytes": 3418
+  },
+  {
+    "instance_id": "sphinx-doc__sphinx-7748",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__sphinx-doc__sphinx-7748__a1",
+    "outcome": "unresolved",
+    "patch_sha256": "1aea9dc3bd27b24bbe2b9331f71d084a73cebb8ef0e0ac88d55ee771d778ac8f",
+    "patch_bytes": 2728
+  },
+  {
+    "instance_id": "sphinx-doc__sphinx-7889",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__sphinx-doc__sphinx-7889__a1",
+    "outcome": "resolved",
+    "patch_sha256": "538db401e9de21267f90426ecca8ac503537645bff933edaf98bb3b8f57b9b16",
+    "patch_bytes": 664
+  },
+  {
+    "instance_id": "sphinx-doc__sphinx-7985",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__sphinx-doc__sphinx-7985__a1",
+    "outcome": "unresolved",
+    "patch_sha256": "da574217e59f7d570e578db08e4bd0de3a5ebd96d6d1d47fa484d114083ecb52",
+    "patch_bytes": 3298
+  },
+  {
+    "instance_id": "sphinx-doc__sphinx-8035",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__sphinx-doc__sphinx-8035__a1",
+    "outcome": "resolved",
+    "patch_sha256": "2f1f7eaddec101c1e49ac09ea17c4066cd3ce3a907e7ce78843ea1bf2ff78f23",
+    "patch_bytes": 2640
+  },
+  {
+    "instance_id": "sphinx-doc__sphinx-8056",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__sphinx-doc__sphinx-8056__a1",
+    "outcome": "resolved",
+    "patch_sha256": "927fbc04a1f2a1e1d59779b7e921edf5e194448ababccd82d275d58f2832349d",
+    "patch_bytes": 1227
+  },
+  {
+    "instance_id": "sphinx-doc__sphinx-8120",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__sphinx-doc__sphinx-8120__a1",
+    "outcome": "resolved",
+    "patch_sha256": "31a0a073cf715f17b14d49609d71d06b42d8aaa38c5e6b46de9751c07a399712",
+    "patch_bytes": 714
+  },
+  {
+    "instance_id": "sphinx-doc__sphinx-8265",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__sphinx-doc__sphinx-8265__a1",
+    "outcome": "resolved",
+    "patch_sha256": "d93324153ee83b0f5fbb8b6410c1ba0e1ec9dbf030bb6c42ed40d7d0602fdcd8",
+    "patch_bytes": 1489
+  },
+  {
+    "instance_id": "sphinx-doc__sphinx-8269",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__sphinx-doc__sphinx-8269__a1",
+    "outcome": "unresolved",
+    "patch_sha256": "1c58bcbaccd92f6eb7dae193b683094712ffe64cb8d4a6e034fafff4584a12cc",
+    "patch_bytes": 16042
+  },
+  {
+    "instance_id": "sphinx-doc__sphinx-8459",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__sphinx-doc__sphinx-8459__a1",
+    "outcome": "resolved",
+    "patch_sha256": "7a8a280a13050fb665e431a4ca3c4dde6a8ca7bc677881b9556efd9b94b2b098",
+    "patch_bytes": 763
+  },
+  {
+    "instance_id": "sphinx-doc__sphinx-8475",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__sphinx-doc__sphinx-8475__a1",
+    "outcome": "unresolved",
+    "patch_sha256": "c11a7087b215c7262e5dbeb697300fb50394f407c0d26d00df6516b25183907c",
+    "patch_bytes": 1068
+  },
+  {
+    "instance_id": "sphinx-doc__sphinx-8548",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__sphinx-doc__sphinx-8548__a1",
+    "outcome": "unresolved",
+    "patch_sha256": "7f507ad867ce1ed93d8db19dc704eefb80a7f602923e12e556bbd6e3228e1b03",
+    "patch_bytes": 3263
+  },
+  {
+    "instance_id": "sphinx-doc__sphinx-8551",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__sphinx-doc__sphinx-8551__a1",
+    "outcome": "resolved",
+    "patch_sha256": "06308e4a43db4a1ce316b05a28e288c1e7c4bf87622c9a0c8195efac35193e84",
+    "patch_bytes": 56469
+  },
+  {
+    "instance_id": "sphinx-doc__sphinx-8595",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__sphinx-doc__sphinx-8595__a1",
+    "outcome": "resolved",
+    "patch_sha256": "e9f268994c9c89b003bedb987b96e9f22f8e710e48294a0188c265caa208a8a4",
+    "patch_bytes": 1088
+  },
+  {
+    "instance_id": "sphinx-doc__sphinx-8621",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__sphinx-doc__sphinx-8621__a1",
+    "outcome": "resolved",
+    "patch_sha256": "4ca684c1b471cba01b9ef5d4875dd06b983e9687d164bcc36751d4f131331a0d",
+    "patch_bytes": 531
+  },
+  {
+    "instance_id": "sphinx-doc__sphinx-8638",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__sphinx-doc__sphinx-8638__a1",
+    "outcome": "unresolved",
+    "patch_sha256": "66a084240c6135749aa22f2b9a290db2e381cff903b1b862e9fe8d1bd07138d2",
+    "patch_bytes": 791
+  },
+  {
+    "instance_id": "sphinx-doc__sphinx-8721",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__sphinx-doc__sphinx-8721__a1",
+    "outcome": "resolved",
+    "patch_sha256": "53eba1f4dd623a69492268b0b508b4bc96eee3a5def98a9a074b5dce30663d58",
+    "patch_bytes": 544
+  },
+  {
+    "instance_id": "sphinx-doc__sphinx-9229",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__sphinx-doc__sphinx-9229__a1",
+    "outcome": "empty_patch",
+    "patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "patch_bytes": 0
+  },
+  {
+    "instance_id": "sphinx-doc__sphinx-9258",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__sphinx-doc__sphinx-9258__a1",
+    "outcome": "resolved",
+    "patch_sha256": "51dcf909617efaafea9e4434a0b0191d3883b71ccca8821af97c8650202ac133",
+    "patch_bytes": 656
+  },
+  {
+    "instance_id": "sphinx-doc__sphinx-9281",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__sphinx-doc__sphinx-9281__a1",
+    "outcome": "resolved",
+    "patch_sha256": "837ec7e68d09faff19af2d60f3671e23ee54338cd82608971f3548c41bd0c2fb",
+    "patch_bytes": 507
+  },
+  {
+    "instance_id": "sphinx-doc__sphinx-9320",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__sphinx-doc__sphinx-9320__a1",
+    "outcome": "empty_patch",
+    "patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "patch_bytes": 0
+  },
+  {
+    "instance_id": "sphinx-doc__sphinx-9367",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__sphinx-doc__sphinx-9367__a1",
+    "outcome": "resolved",
+    "patch_sha256": "56ec5cb50f2ffeffa1604794cbee8886fedf31849d1656e1f6fecd9470a3f8d3",
+    "patch_bytes": 564
+  },
+  {
+    "instance_id": "sphinx-doc__sphinx-9461",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__sphinx-doc__sphinx-9461__a1",
+    "outcome": "unresolved",
+    "patch_sha256": "8e86ff87ae49f891d4abfc0dc7023b2eccede45054b2552b80110bc9cf9f52f3",
+    "patch_bytes": 3961
+  },
+  {
+    "instance_id": "sphinx-doc__sphinx-9591",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__sphinx-doc__sphinx-9591__a1",
+    "outcome": "resolved",
+    "patch_sha256": "b7123f051b4aa15dab0aee925d28adcb9426051a1f28ee980263c97597d65d23",
+    "patch_bytes": 517
+  },
+  {
+    "instance_id": "sphinx-doc__sphinx-9602",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__sphinx-doc__sphinx-9602__a1",
+    "outcome": "unresolved",
+    "patch_sha256": "1d683d8380bd4153c2c12be0f9f248f3f0c4bce35dcbf6339db654f68c7c0292",
+    "patch_bytes": 802
+  },
+  {
+    "instance_id": "sphinx-doc__sphinx-9658",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__sphinx-doc__sphinx-9658__a1",
+    "outcome": "unresolved",
+    "patch_sha256": "41eb1543b6b9a1a2def716de138120b84a2c7d81e1eb53a55411a3bbd31679dc",
+    "patch_bytes": 1379
+  },
+  {
+    "instance_id": "sphinx-doc__sphinx-9698",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__sphinx-doc__sphinx-9698__a1",
+    "outcome": "resolved",
+    "patch_sha256": "21a895e722b259d5331db73279bab4719c461fb829774e74bc9a0ddec28b1664",
+    "patch_bytes": 620
+  },
+  {
+    "instance_id": "sympy__sympy-12489",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__sympy__sympy-12489__a1",
+    "outcome": "unresolved",
+    "patch_sha256": "d1373475eb71c7d302a956d76bce4c9f029c4d2b2aaa9bc2ba2d0804f66ba467",
+    "patch_bytes": 88306
+  },
+  {
+    "instance_id": "sympy__sympy-13031",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__sympy__sympy-13031__a1",
+    "outcome": "empty_patch",
+    "patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "patch_bytes": 0
+  },
+  {
+    "instance_id": "sympy__sympy-13615",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__sympy__sympy-13615__a1",
+    "outcome": "resolved",
+    "patch_sha256": "9c8e241241abb0c5d57ecd323743fc2511a0e3da9978e8cbe2df9a9834056a8a",
+    "patch_bytes": 823
+  },
+  {
+    "instance_id": "sympy__sympy-13757",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__sympy__sympy-13757__a1",
+    "outcome": "resolved",
+    "patch_sha256": "3be3fdf783c0e2fca0553c63364c6d6319343461bb822ab2d181eb535d4c423f",
+    "patch_bytes": 388
+  },
+  {
+    "instance_id": "sympy__sympy-13798",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__sympy__sympy-13798__a1",
+    "outcome": "unresolved",
+    "patch_sha256": "2c9e6b628c987b13a595a7ee9bde65a2527d1e67582530aeaeafe95fb9230a83",
+    "patch_bytes": 1195
+  },
+  {
+    "instance_id": "sympy__sympy-13852",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__sympy__sympy-13852__a1",
+    "outcome": "unresolved",
+    "patch_sha256": "0ca79d2bcdf59962cbf2332cb46330bf48ba6b206bf3bce0a46c3ce9325b86a9",
+    "patch_bytes": 19134
+  },
+  {
+    "instance_id": "sympy__sympy-13877",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__sympy__sympy-13877__a1",
+    "outcome": "resolved",
+    "patch_sha256": "1824e0f668c1462468a2a1061f7cc46d554bd00833580b133a4082735834b825",
+    "patch_bytes": 568
+  },
+  {
+    "instance_id": "sympy__sympy-13878",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__sympy__sympy-13878__a1",
+    "outcome": "resolved",
+    "patch_sha256": "3942827ec6ae1a14c67d9bf9f66a0795664c485741c4ad58c64c3909db13f523",
+    "patch_bytes": 5368
+  },
+  {
+    "instance_id": "sympy__sympy-13974",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__sympy__sympy-13974__a1",
+    "outcome": "resolved",
+    "patch_sha256": "29a09a2a0ee7d9aaf97400cfe8501de72d3be4c8c76091917b2bf12f538d4e47",
+    "patch_bytes": 982
+  },
+  {
+    "instance_id": "sympy__sympy-14248",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__sympy__sympy-14248__a1",
+    "outcome": "unresolved",
+    "patch_sha256": "6c7183ad4e79910cc4fe52bc6b17e25358915ada38d8af18bce6fc6a1ace3f73",
+    "patch_bytes": 6078
+  },
+  {
+    "instance_id": "sympy__sympy-14711",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__sympy__sympy-14711__a1",
+    "outcome": "resolved",
+    "patch_sha256": "fed8d27ec72a030a23f7a7235121e3ebb23b753ae812fbd57b8baf9357f20ff8",
+    "patch_bytes": 433
+  },
+  {
+    "instance_id": "sympy__sympy-15349",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__sympy__sympy-15349__a1",
+    "outcome": "resolved",
+    "patch_sha256": "7c2bb84cd4f62f342e8740187c219eb9af411e27baf7f76e897ba85cb80e1300",
+    "patch_bytes": 471
+  },
+  {
+    "instance_id": "sympy__sympy-15599",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__sympy__sympy-15599__a1",
+    "outcome": "resolved",
+    "patch_sha256": "8470dbd14f85ccdeb41c5cf78e69519d2baab07b22d298be010ceae3fbf5db1f",
+    "patch_bytes": 744
+  },
+  {
+    "instance_id": "sympy__sympy-15809",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__sympy__sympy-15809__a1",
+    "outcome": "resolved",
+    "patch_sha256": "4bbf376416e6498fd7a911da90d9fb90ec2205d6220e0abc102d5c972c547883",
+    "patch_bytes": 1662
+  },
+  {
+    "instance_id": "sympy__sympy-16450",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__sympy__sympy-16450__a1",
+    "outcome": "resolved",
+    "patch_sha256": "e4442f108acac4539b363f29fe102f804e072138a00e974647bb6c676552971a",
+    "patch_bytes": 541
+  },
+  {
+    "instance_id": "sympy__sympy-16597",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__sympy__sympy-16597__a1",
+    "outcome": "unresolved",
+    "patch_sha256": "be8f8741719bc86f2bba8c982aa2fde576001331db05ebf5de44601d3ec50975",
+    "patch_bytes": 386
+  },
+  {
+    "instance_id": "sympy__sympy-16792",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__sympy__sympy-16792__a1",
+    "outcome": "resolved",
+    "patch_sha256": "a766023c5d8e39a23913cf3363a8f18eaae143fb45965ebbd0b4e1440e88c37d",
+    "patch_bytes": 3006
+  },
+  {
+    "instance_id": "sympy__sympy-17139",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__sympy__sympy-17139__a1",
+    "outcome": "resolved",
+    "patch_sha256": "3655b0cef3ffdad356226763a1af6473f569e7b7fd07dd8d9d0d6d16d09a01ee",
+    "patch_bytes": 397
+  },
+  {
+    "instance_id": "sympy__sympy-17318",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__sympy__sympy-17318__a1",
+    "outcome": "unresolved",
+    "patch_sha256": "9ee1b1944ed010d1ffe37f2db57255db5f67c7f22537371f86bfa3879e9bca22",
+    "patch_bytes": 489
+  },
+  {
+    "instance_id": "sympy__sympy-17630",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__sympy__sympy-17630__a1",
+    "outcome": "unresolved",
+    "patch_sha256": "4151bb02e1a3c427aa769308e3d1c9696c156ac42369bc6b675d24d5ae5feef6",
+    "patch_bytes": 45645
+  },
+  {
+    "instance_id": "sympy__sympy-17655",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__sympy__sympy-17655__a1",
+    "outcome": "resolved",
+    "patch_sha256": "6f07de3035adf18ee101834bc995da2c0162b84eda089c5e954df35ced4674f4",
+    "patch_bytes": 1856
+  },
+  {
+    "instance_id": "sympy__sympy-18199",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__sympy__sympy-18199__a1",
+    "outcome": "unresolved",
+    "patch_sha256": "1a8e897ec94efdfae42603a580631eef405f5b32413aa98646e717f8701bab33",
+    "patch_bytes": 509
+  },
+  {
+    "instance_id": "sympy__sympy-18698",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__sympy__sympy-18698__a1",
+    "outcome": "resolved",
+    "patch_sha256": "6049e51861cb735e5080d027bea954f05a71a3dfed64a7c45746ca3c5627731d",
+    "patch_bytes": 2238
+  },
+  {
+    "instance_id": "sympy__sympy-18763",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__sympy__sympy-18763__a1",
+    "outcome": "unresolved",
+    "patch_sha256": "efd644256b0dd07ac1a652c24b06e1f61f72a4d9401170a00a8e617d2e21dd15",
+    "patch_bytes": 535
+  },
+  {
+    "instance_id": "sympy__sympy-19040",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__sympy__sympy-19040__a1",
+    "outcome": "resolved",
+    "patch_sha256": "b3344b7df1fcb9f7eb4c2452d17c9069de9f18056f0b22902e02d1d15f93c73f",
+    "patch_bytes": 712
+  },
+  {
+    "instance_id": "sympy__sympy-19346",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__sympy__sympy-19346__a1",
+    "outcome": "resolved",
+    "patch_sha256": "0d88945320745fc97283783d7f48ce5b8c7904686ef36bcc57b0af5313007679",
+    "patch_bytes": 1232
+  },
+  {
+    "instance_id": "sympy__sympy-19495",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__sympy__sympy-19495__a1",
+    "outcome": "resolved",
+    "patch_sha256": "c3d20047ac714a75ee4f1dc17ae29dc8246a26dcc2001913b74db9ec93eb5346",
+    "patch_bytes": 521
+  },
+  {
+    "instance_id": "sympy__sympy-19637",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__sympy__sympy-19637__a1",
+    "outcome": "resolved",
+    "patch_sha256": "eec98cce749ee97b39bc579f4cbcfcc6b0fc2342c076869dcc48edf8ce983296",
+    "patch_bytes": 411
+  },
+  {
+    "instance_id": "sympy__sympy-19783",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__sympy__sympy-19783__a1",
+    "outcome": "resolved",
+    "patch_sha256": "e4a98bacca17d41500d38a5d794c2bb4b6604631294bb8cfa52c47ba013aa574",
+    "patch_bytes": 1059
+  },
+  {
+    "instance_id": "sympy__sympy-20154",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__sympy__sympy-20154__a1",
+    "outcome": "resolved",
+    "patch_sha256": "58ca22e92bb65ae7de93e0b72d3f6ffb7069d9215ddfcfed2a2b22cc0339f23d",
+    "patch_bytes": 1759
+  },
+  {
+    "instance_id": "sympy__sympy-20438",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__sympy__sympy-20438__a1",
+    "outcome": "unresolved",
+    "patch_sha256": "b64da1a6cfa25feae2e3f7d43f6ecb4dbba6e932f573a38bbf14fec1c22f2397",
+    "patch_bytes": 1590
+  },
+  {
+    "instance_id": "sympy__sympy-20590",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__sympy__sympy-20590__a1",
+    "outcome": "resolved",
+    "patch_sha256": "fb98920b3f5e8182ebf169b56ec64eb1e564d8b4132a4ceff1400c68e4833472",
+    "patch_bytes": 470
+  },
+  {
+    "instance_id": "sympy__sympy-20801",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__sympy__sympy-20801__a1",
+    "outcome": "resolved",
+    "patch_sha256": "f1daf9ee6f94d4a5c60415364437c7a9a5e33bd9c84653d6ab0c6c6ec7579aaf",
+    "patch_bytes": 568
+  },
+  {
+    "instance_id": "sympy__sympy-21847",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__sympy__sympy-21847__a1",
+    "outcome": "resolved",
+    "patch_sha256": "11f181d76739653031f1126cbba54b73af62e9091ca9723901222a6ea3457f3e",
+    "patch_bytes": 1045
+  },
+  {
+    "instance_id": "sympy__sympy-21930",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__sympy__sympy-21930__a1",
+    "outcome": "unresolved",
+    "patch_sha256": "5bf1096e4ffcb58a59b24444c5f44835e579aaae35f8c39ff4919682e4122b80",
+    "patch_bytes": 643
+  },
+  {
+    "instance_id": "sympy__sympy-22080",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__sympy__sympy-22080__a1",
+    "outcome": "unresolved",
+    "patch_sha256": "c728573c947026d1b4c312b9e9604bd518a25eff6f4f740df78f9563d9e1e59f",
+    "patch_bytes": 1514
+  },
+  {
+    "instance_id": "sympy__sympy-22456",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__sympy__sympy-22456__a1",
+    "outcome": "resolved",
+    "patch_sha256": "46f07cd9241ebaab2dfb2b4218d7b29d4577324952d71254e0d832d3e9c6aae6",
+    "patch_bytes": 804
+  },
+  {
+    "instance_id": "sympy__sympy-23534",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__sympy__sympy-23534__a1",
+    "outcome": "resolved",
+    "patch_sha256": "c06255eaef8ca89770b80a6cf94cd001ea198badb7a923ba2ddce55abf5217a3",
+    "patch_bytes": 395
+  },
+  {
+    "instance_id": "sympy__sympy-24443",
+    "artifact_dir": "mini_full_20260918_domains_v4b/instances/mini_full_20260918_domains_v4b__sympy__sympy-24443__a1",
+    "outcome": "resolved",
+    "patch_sha256": "d535052bd38cc5faffecc4c501856a335c4d2e773f5cee2b51e9a5d813b15520",
+    "patch_bytes": 898
+  }
+]

@@ -1,0 +1,143 @@
+{
+  "export_date": "2026-09-28",
+  "purpose": "Compact audit export; raw trajectories remain local and git-ignored.",
+  "inputs": {
+    "per_task.csv": "1f5e5d1e38b06db073d535755bc35205f5a21bd047468d11afa17bbb33da98cf",
+    "selected_tasks": 216,
+    "resolved": 100
+  },
+  "files": {
+    "batches/mini_pro_full_20260920_domains_v2/config.json": {
+      "bytes": 707,
+      "sha256": "fc9cfc87a525ca4e4c19a5ca6d72785c60924bb3eec960c11caecfb3495211b9"
+    },
+    "batches/mini_pro_full_20260920_domains_v2/manifest.json": {
+      "bytes": 96601,
+      "sha256": "835486a9df56daa1c795c156a7e8a63fb432508c59548ac98745b4a5097f8696"
+    },
+    "batches/mini_pro_full_20260920_domains_v2/source_at_run/experiments/run_swebench_mini_swarm.py": {
+      "bytes": 6318,
+      "sha256": "3cc07c9e3e746a8853cdb0029ba9f9ee4deb063a67caedc409c02d95f05ded29"
+    },
+    "batches/mini_pro_full_20260920_domains_v2/source_at_run/swarm/environment/agents/swe_bench/mini_benchmark.py": {
+      "bytes": 1223,
+      "sha256": "c598803a115c626b4c4de683825ae0f8d8c6d0c6ecb06159be65731c4f1c8fb7"
+    },
+    "batches/mini_pro_full_20260920_domains_v2/source_at_run/swarm/environment/agents/swe_bench/mini_checks.py": {
+      "bytes": 3649,
+      "sha256": "b9222af569f3b778c0cebc3192f554e95b858061eeef660189483c34c1a2aafa"
+    },
+    "batches/mini_pro_full_20260920_domains_v2/source_at_run/swarm/environment/agents/swe_bench/mini_collaboration.py": {
+      "bytes": 5483,
+      "sha256": "cd587f19ee4f4aa50f6ddca5bf590a25882cda30b192b2ac310bc39c13edfe7c"
+    },
+    "batches/mini_pro_full_20260920_domains_v2/source_at_run/swarm/environment/agents/swe_bench/mini_policy.py": {
+      "bytes": 1399,
+      "sha256": "ce63e6bfd3cd472e3bd5734e5be582ff2cf4f6ccf8ce88cf5bc17d1a737ba2a0"
+    },
+    "batches/mini_pro_full_20260920_domains_v2/source_at_run/swarm/environment/agents/swe_bench/mini_prompts.py": {
+      "bytes": 8581,
+      "sha256": "174c4f89e9a7c84e8c2f5066280912df4580313ce9d211b6eddd02093e843f59"
+    },
+    "batches/mini_pro_full_20260920_domains_v2/source_at_run/swarm/environment/agents/swe_bench/mini_protocol.py": {
+      "bytes": 4716,
+      "sha256": "0d0aabf2345c0a9d50cfcf8181e21da6f392e6e5cea78df50dc70ba04a01c6b9"
+    },
+    "batches/mini_pro_full_20260920_domains_v2/source_at_run/swarm/environment/agents/swe_bench/mini_repository.py": {
+      "bytes": 2274,
+      "sha256": "3fa6ef2545ea456af4bfa85ebe26e47ebb68087ba9134c400d665060b8cd71c7"
+    },
+    "batches/mini_pro_full_20260920_domains_v2/source_at_run/swarm/environment/agents/swe_bench/mini_runtime.py": {
+      "bytes": 20525,
+      "sha256": "38805f85fccc8ab804364b9174d561f60d9a7b94e0c4814b17684bff8f8ff0a6"
+    },
+    "batches/mini_pro_full_20260920_domains_v2/source_at_run/swarm/environment/agents/swe_bench/mini_worker.py": {
+      "bytes": 15096,
+      "sha256": "25760559eaa89bd148fbee3bf145ec3865636207ac90cc639b22b4b5164c34ab"
+    },
+    "batches/mini_pro_full_20260920_domains_v2/source_at_run/swarm/graph/graph.py": {
+      "bytes": 7185,
+      "sha256": "f021601f1a1aae0dfe23f236a926ee98814e0c4dd3c8aeb7a88b0571db1d0938"
+    },
+    "batches/mini_pro_full_20260920_domains_v2/source_at_run/swarm/graph/node.py": {
+      "bytes": 6333,
+      "sha256": "6a0c98880293139129a804e2a50c4d30a57c387a2d6691de66d4a3cbbefb6755"
+    },
+    "batches/mini_pro_full_20260920_domains_v2/source_at_run/swarm/graph/swarm.py": {
+      "bytes": 7385,
+      "sha256": "0771869d733cfcd13a90f1c872cad1abf5312339eb18b562468cfe0025c20afd"
+    },
+    "batches/mini_pro_retry_20260921_budget_v1/config.json": {
+      "bytes": 707,
+      "sha256": "fc9cfc87a525ca4e4c19a5ca6d72785c60924bb3eec960c11caecfb3495211b9"
+    },
+    "batches/mini_pro_retry_20260921_budget_v1/manifest.json": {
+      "bytes": 58413,
+      "sha256": "2e29b84883c5b0f92f22b976c034bde3263867c6f6ad1726efe6e8dc1eb71dd4"
+    },
+    "batches/mini_pro_retry_20260921_budget_v1/source_at_run/experiments/run_swebench_mini_swarm.py": {
+      "bytes": 6318,
+      "sha256": "3cc07c9e3e746a8853cdb0029ba9f9ee4deb063a67caedc409c02d95f05ded29"
+    },
+    "batches/mini_pro_retry_20260921_budget_v1/source_at_run/swarm/environment/agents/swe_bench/mini_benchmark.py": {
+      "bytes": 1223,
+      "sha256": "c598803a115c626b4c4de683825ae0f8d8c6d0c6ecb06159be65731c4f1c8fb7"
+    },
+    "batches/mini_pro_retry_20260921_budget_v1/source_at_run/swarm/environment/agents/swe_bench/mini_checks.py": {
+      "bytes": 3649,
+      "sha256": "b9222af569f3b778c0cebc3192f554e95b858061eeef660189483c34c1a2aafa"
+    },
+    "batches/mini_pro_retry_20260921_budget_v1/source_at_run/swarm/environment/agents/swe_bench/mini_collaboration.py": {
+      "bytes": 5483,
+      "sha256": "cd587f19ee4f4aa50f6ddca5bf590a25882cda30b192b2ac310bc39c13edfe7c"
+    },
+    "batches/mini_pro_retry_20260921_budget_v1/source_at_run/swarm/environment/agents/swe_bench/mini_policy.py": {
+      "bytes": 1399,
+      "sha256": "ce63e6bfd3cd472e3bd5734e5be582ff2cf4f6ccf8ce88cf5bc17d1a737ba2a0"
+    },
+    "batches/mini_pro_retry_20260921_budget_v1/source_at_run/swarm/environment/agents/swe_bench/mini_prompts.py": {
+      "bytes": 8581,
+      "sha256": "174c4f89e9a7c84e8c2f5066280912df4580313ce9d211b6eddd02093e843f59"
+    },
+    "batches/mini_pro_retry_20260921_budget_v1/source_at_run/swarm/environment/agents/swe_bench/mini_protocol.py": {
+      "bytes": 4716,
+      "sha256": "0d0aabf2345c0a9d50cfcf8181e21da6f392e6e5cea78df50dc70ba04a01c6b9"
+    },
+    "batches/mini_pro_retry_20260921_budget_v1/source_at_run/swarm/environment/agents/swe_bench/mini_repository.py": {
+      "bytes": 2274,
+      "sha256": "3fa6ef2545ea456af4bfa85ebe26e47ebb68087ba9134c400d665060b8cd71c7"
+    },
+    "batches/mini_pro_retry_20260921_budget_v1/source_at_run/swarm/environment/agents/swe_bench/mini_runtime.py": {
+      "bytes": 20525,
+      "sha256": "38805f85fccc8ab804364b9174d561f60d9a7b94e0c4814b17684bff8f8ff0a6"
+    },
+    "batches/mini_pro_retry_20260921_budget_v1/source_at_run/swarm/environment/agents/swe_bench/mini_worker.py": {
+      "bytes": 15096,
+      "sha256": "25760559eaa89bd148fbee3bf145ec3865636207ac90cc639b22b4b5164c34ab"
+    },
+    "batches/mini_pro_retry_20260921_budget_v1/source_at_run/swarm/graph/graph.py": {
+      "bytes": 7185,
+      "sha256": "f021601f1a1aae0dfe23f236a926ee98814e0c4dd3c8aeb7a88b0571db1d0938"
+    },
+    "batches/mini_pro_retry_20260921_budget_v1/source_at_run/swarm/graph/node.py": {
+      "bytes": 6333,
+      "sha256": "6a0c98880293139129a804e2a50c4d30a57c387a2d6691de66d4a3cbbefb6755"
+    },
+    "batches/mini_pro_retry_20260921_budget_v1/source_at_run/swarm/graph/swarm.py": {
+      "bytes": 7385,
+      "sha256": "0771869d733cfcd13a90f1c872cad1abf5312339eb18b562468cfe0025c20afd"
+    },
+    "evaluations.jsonl": {
+      "bytes": 698277,
+      "sha256": "4d0ed933c6070e889a97924854c484fd0f0908553b3002325f444a97a4695e48"
+    },
+    "predictions.jsonl": {
+      "bytes": 2308457,
+      "sha256": "69489f5ad38257af6209649b68dbdbcf37ea949fecfaf42623a1d3aac63ceadd"
+    },
+    "selection.json": {
+      "bytes": 100989,
+      "sha256": "ba98ccd9ba6d61cab8deb90c588017ed2bdecac610edb075d22693eb6c5fe9a3"
+    }
+  }
+}

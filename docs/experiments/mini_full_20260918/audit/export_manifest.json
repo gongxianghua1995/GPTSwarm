@@ -1,0 +1,75 @@
+{
+  "export_date": "2026-09-28",
+  "purpose": "Compact audit export; raw trajectories remain local and git-ignored.",
+  "inputs": {
+    "per_task.csv": "3d1ffb35a4958b495107a0bb9d7b50a0d943247277168dd8e1b4c4dcc60429ad",
+    "selected_tasks": 154,
+    "resolved": 102
+  },
+  "files": {
+    "batches/mini_full_20260918_domains_v4b/config.json": {
+      "bytes": 556,
+      "sha256": "2ad44fe77ff4946a8eab4c9f1099712ba298fe5c54a1d91f20cba2d615410abf"
+    },
+    "batches/mini_full_20260918_domains_v4b/manifest.json": {
+      "bytes": 75354,
+      "sha256": "67c740db3fd74b3469d18c6f2cb487ac6da8f32b695f82927711bc35b01240e9"
+    },
+    "batches/mini_full_20260918_domains_v4b/source_at_run/experiments/run_swebench_mini_swarm.py": {
+      "bytes": 5469,
+      "sha256": "d9502152f49971751a1aac245ed43e21024b4ed79cbefd039941a40b07bfc2f1"
+    },
+    "batches/mini_full_20260918_domains_v4b/source_at_run/swarm/environment/agents/swe_bench/mini_checks.py": {
+      "bytes": 3635,
+      "sha256": "8e9065fdeefd87880e694ac11d0d479f395df70fc7920a01310b6c71909ef2d5"
+    },
+    "batches/mini_full_20260918_domains_v4b/source_at_run/swarm/environment/agents/swe_bench/mini_collaboration.py": {
+      "bytes": 5483,
+      "sha256": "cd587f19ee4f4aa50f6ddca5bf590a25882cda30b192b2ac310bc39c13edfe7c"
+    },
+    "batches/mini_full_20260918_domains_v4b/source_at_run/swarm/environment/agents/swe_bench/mini_policy.py": {
+      "bytes": 1399,
+      "sha256": "ce63e6bfd3cd472e3bd5734e5be582ff2cf4f6ccf8ce88cf5bc17d1a737ba2a0"
+    },
+    "batches/mini_full_20260918_domains_v4b/source_at_run/swarm/environment/agents/swe_bench/mini_prompts.py": {
+      "bytes": 8581,
+      "sha256": "174c4f89e9a7c84e8c2f5066280912df4580313ce9d211b6eddd02093e843f59"
+    },
+    "batches/mini_full_20260918_domains_v4b/source_at_run/swarm/environment/agents/swe_bench/mini_protocol.py": {
+      "bytes": 4716,
+      "sha256": "0d0aabf2345c0a9d50cfcf8181e21da6f392e6e5cea78df50dc70ba04a01c6b9"
+    },
+    "batches/mini_full_20260918_domains_v4b/source_at_run/swarm/environment/agents/swe_bench/mini_runtime.py": {
+      "bytes": 17993,
+      "sha256": "80493cf8d81520ab4035db27a0cb9ca681b540879c3a816587b677bf9ea0e0a1"
+    },
+    "batches/mini_full_20260918_domains_v4b/source_at_run/swarm/environment/agents/swe_bench/mini_worker.py": {
+      "bytes": 15011,
+      "sha256": "9eac5f757b14cea0149d75781b24e123fc097c6ba79879cca533f4d030d89ca1"
+    },
+    "batches/mini_full_20260918_domains_v4b/source_at_run/swarm/graph/graph.py": {
+      "bytes": 7185,
+      "sha256": "f021601f1a1aae0dfe23f236a926ee98814e0c4dd3c8aeb7a88b0571db1d0938"
+    },
+    "batches/mini_full_20260918_domains_v4b/source_at_run/swarm/graph/node.py": {
+      "bytes": 6333,
+      "sha256": "6a0c98880293139129a804e2a50c4d30a57c387a2d6691de66d4a3cbbefb6755"
+    },
+    "batches/mini_full_20260918_domains_v4b/source_at_run/swarm/graph/swarm.py": {
+      "bytes": 7385,
+      "sha256": "0771869d733cfcd13a90f1c872cad1abf5312339eb18b562468cfe0025c20afd"
+    },
+    "evaluations.jsonl": {
+      "bytes": 1274236,
+      "sha256": "31324f412bf2cecfe4ce9b28163be3264762bcc6aa37631637458db190bf66df"
+    },
+    "predictions.jsonl": {
+      "bytes": 494425,
+      "sha256": "15cba4820829a53d8b3ce1335a25f448f237328d1bb63e085482667d2ccdc815"
+    },
+    "selection.json": {
+      "bytes": 48498,
+      "sha256": "98623d1d19c2775847f5829b3c84d55ba439c297b280b72b4dacad71990fbc80"
+    }
+  }
+}
