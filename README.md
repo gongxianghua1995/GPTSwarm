@@ -1,3 +1,5 @@
+> **SWE 断网实验**：同事接手请先阅读 [快速启动指南](docs/SWE_OFFLINE_QUICKSTART.md)，包含依赖/输入准备、零模型调用检查、全量启动及续跑。
+
 [![Page](https://img.shields.io/badge/Project-Page-lightgreen.svg)](https://gptswarm.org)
 [![arXiv](https://img.shields.io/badge/arXiv-Paper-gold.svg)](https://arxiv.org/abs/2402.16823)
 [![License](https://img.shields.io/badge/License-MIT-orange.svg)](https://github.com/metauto-ai/GPTSwarm/blob/main/LICENSE)

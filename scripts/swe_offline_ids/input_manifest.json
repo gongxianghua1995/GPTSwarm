@@ -1,0 +1,15 @@
+{
+  "bundle": "gptswarm-swe-inputs.tar.gz",
+  "bundle_sha256": "0710ac6f58e1a1138310ab86041fda1441e0884e3f1675a030d1c5f6e63ad7d8",
+  "note": "Full local benchmark inputs; distributed separately from Git. Contains gold/test metadata for evaluator only, no experiment predictions or model credentials.",
+  "files": {
+    "outputs/swebench/swebench_verified_test_154.json": {
+      "sha256": "e1243d2d40c51ddbeb31e19b54eb9f5a2c0db88247f4181eecf8d60b69538647",
+      "bytes": 2278560
+    },
+    "outputs/swebench/pro_test_216.json": {
+      "sha256": "05b628f0f09ed1bd913d4184b2ec73d0587b20d536e053c980a5294b04253b1c",
+      "bytes": 6583520
+    }
+  }
+}
