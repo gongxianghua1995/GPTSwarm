@@ -1,7 +1,7 @@
 {
   "bundle": "gptswarm-swe-inputs.tar.gz",
   "bundle_sha256": "0710ac6f58e1a1138310ab86041fda1441e0884e3f1675a030d1c5f6e63ad7d8",
-  "note": "Full local benchmark inputs; distributed separately from Git. Contains gold/test metadata for evaluator only, no experiment predictions or model credentials.",
+  "note": "Bundled with Git beside this manifest. The launcher restores missing default inputs and verifies SHA-256. Contains benchmark gold/test metadata, no experiment predictions or model credentials; see the quickstart for information-isolation limits.",
   "files": {
     "outputs/swebench/swebench_verified_test_154.json": {
       "sha256": "e1243d2d40c51ddbeb31e19b54eb9f5a2c0db88247f4181eecf8d60b69538647",

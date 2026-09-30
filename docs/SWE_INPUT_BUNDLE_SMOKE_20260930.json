@@ -1,0 +1,85 @@
+{
+  "date": "2026-09-30",
+  "base_commit": "7f1ea04ae7c20145383f5e2a497ea6fa084f39ba",
+  "bundle": "gptswarm-swe-inputs.tar.gz",
+  "clean_directory_restore": {
+    "restored_files": 2,
+    "second_restore_unchanged": true,
+    "selections": {
+      "verified": {
+        "tasks": 154,
+        "domains": {
+          "django": 59,
+          "matplotlib": 23,
+          "sphinx": 33,
+          "sympy": 39
+        }
+      },
+      "pro": {
+        "tasks": 216,
+        "domains": {
+          "ansible": 63,
+          "flipt": 54,
+          "openlibrary": 60,
+          "webclients": 39
+        }
+      }
+    }
+  },
+  "checks": [
+    {
+      "project": "GPTSwarm",
+      "benchmark": "verified",
+      "tasks": 154,
+      "domains": {
+        "django": 59,
+        "matplotlib": 23,
+        "sphinx": 33,
+        "sympy": 39
+      },
+      "input_sha256": "e1243d2d40c51ddbeb31e19b54eb9f5a2c0db88247f4181eecf8d60b69538647",
+      "dependencies": {
+        "python": "3.11.15",
+        "mini-swe-agent": "2.4.6",
+        "swebench": "5.0.2"
+      },
+      "images_checked": 308,
+      "cli_commands_checked": 3,
+      "model_calls": 0,
+      "containers_started": 0,
+      "scope": "Imports, real CLI parsing, input selection, budget/config and read-only image availability; API quota and container execution not tested."
+    },
+    {
+      "project": "GPTSwarm",
+      "benchmark": "pro",
+      "tasks": 216,
+      "domains": {
+        "ansible": 63,
+        "flipt": 54,
+        "openlibrary": 60,
+        "webclients": 39
+      },
+      "input_sha256": "05b628f0f09ed1bd913d4184b2ec73d0587b20d536e053c980a5294b04253b1c",
+      "dependencies": {
+        "python": "3.11.15",
+        "mini-swe-agent": "2.4.6",
+        "swebench": "5.0.2"
+      },
+      "images_checked": 216,
+      "cli_commands_checked": 3,
+      "model_calls": 0,
+      "containers_started": 0,
+      "scope": "Imports, real CLI parsing, input selection, budget/config and read-only image availability; API quota and container execution not tested."
+    }
+  ],
+  "regression_tests_passed": 11,
+  "runtime_executed": false,
+  "source_sha256": {
+    "scripts/swe_offline.py": "955d96bbbc2b95ae9c0fd3a64590efa02d3092714cd89be84f0592c22fa8ce4e",
+    "scripts/test_swe_offline.py": "579dfafae22e7c0ca2834b654712d340a11f51b3658a7dd71e94b590056a5ca4",
+    "scripts/swe_offline_ids/input_manifest.json": "a4a7fd2eca37d674158ae33bf05797f369cd202a46faf8fb32faa834f7876a56",
+    "scripts/swe_offline_ids/gptswarm-swe-inputs.tar.gz": "0710ac6f58e1a1138310ab86041fda1441e0884e3f1675a030d1c5f6e63ad7d8",
+    "docs/SWE_OFFLINE_QUICKSTART.md": "28af0875d86f626f4c2f3ae5e34f22c4c8290b852639a6934b5c3247c3b457e6"
+  },
+  "limits": "Bundle restoration tested in a temporary empty directory; CLI/dependency/image checks use existing server environments. No model requests, containers, benchmark execution, image downloads or clean-machine dependency installation."
+}
